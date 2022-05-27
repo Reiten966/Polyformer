@@ -3,6 +3,8 @@ The parts should be printed with at least 4 perimeters, 6 top and bottom layers,
 
 
 
+
+
 Polyformer Assembly video part 1
 
 https://www.youtube.com/watch?v=gqaRRzHKmp0
