@@ -9,7 +9,7 @@ The Part "Melt_Zone" is recommended to print with a more heat resistant material
 
 
 
-Polyformer Assembly video part 1
+Polyformer assembly video part 1
 
 https://www.youtube.com/watch?v=gqaRRzHKmp0
 
