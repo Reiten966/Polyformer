@@ -13,6 +13,8 @@ And then add the printer.cfg to the mainsail web interface.
 
 
 
+
+
 Option2: (Klipper: Voron printer + MCU)
 
 
