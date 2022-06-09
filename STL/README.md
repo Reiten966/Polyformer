@@ -4,6 +4,7 @@ Please also adjust the expansion rate in the slicer, you can do so by scaling th
 
 The Part "Melt_Zone" is recommended to print with a more heat resistant material such as PETG or ABS. PLA has not been tested yet, but we do believe it will survive because we did math and math is cool.
 
+All the functional parts can be printed on a 200mm x 200m build plate. The panels can be printed on a 250mm x 200mm plate.
 
 Please also feel free to download and use the checklist tool to keep in track the parts printed.
 Credit to @SoliDeoGloria#8025
