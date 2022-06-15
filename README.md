@@ -1,5 +1,5 @@
 # Polyformer
-To Reshape, Recreate, Reproduce.
+## To Reshape, Recreate, Reproduce.
 
 Polyformer is an open-source project that aims to recycle plastics into FDM filaments
 
