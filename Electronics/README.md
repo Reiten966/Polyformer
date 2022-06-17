@@ -5,15 +5,6 @@
 # Firmware Setup
 
 
-# PID Tuning
-Polyformer Klipper configuration - Heater cartridge PID calibrartion
-======================================================================
-
-__Control board:__ _Bigtree SKR Pico v1.0_<br/>
-__Controller interface:__ _UART_<br/>
-__Host system:__ _Raspberry Pi3_<br/>
-__Host OS:__ _MainsailOS_ (custom RasperryPi image)
-
 # PID Calibration Procedure
 
 This procedure is for calibrating the heater cartridge.
