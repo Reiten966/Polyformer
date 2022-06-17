@@ -70,12 +70,11 @@ __IMPORTANT:__ ALL pre-qeqs MUST be satified in order to proceed.
 2. Open the _G-Code console_ on the Mainsail web UI
 3. Run the following g-code command to calibrate. This will take about 5 minutes to complete:
 ```
-PID_CALIBRATE HEATER=extruder TARGET=210 WRITE_FILE=1
+PID_CALIBRATE HEATER=extruder TARGET=210
 ```
-4. Run this command to save the PID colibration coeffs to the 'printer.cfg' file
+4. Run this command to save the PID calibration coeffs to the 'printer.cfg' file
 ```
 SAVE_CONFIG
 ```
-5. Edit `printer.cfg`, set the PID coeffs (`pid_Kp`, `pid_Ki`, `pid_Kd`) to the values that were just calculated. The computed PID coeffs are appended to the `printer.cfg` in a block comment
-4. Click the _Save and Restart_ button to reconfigure _Klipper_
+5. Click the _Save and Restart_ button to reconfigure _Klipper_
 6. Verify temperature stabiity
