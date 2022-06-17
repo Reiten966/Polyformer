@@ -4,7 +4,7 @@
 
 # Firmware Setup
 
-## Option1: (Klipper: standalone Pi + MCU)
+## Option1: (Klipper: Standalone Pi + Compatible MCU)
 
 
 For klipper users with a standalone raspberry pi:
@@ -21,7 +21,7 @@ And then add the printer.cfg to the mainsail web interface.
 
 
 
-## Option2: (Klipper: Voron printer + MCU)
+## Option2: (Klipper: Voron printer + Compatible MCU)
 
 
 For klipper users with an existing printer:
@@ -34,7 +34,7 @@ And then include the polyformer.cfg in your main printer.cfg as below
 
 [SKR pico installation guide here](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
 
-## Option3: (Marlin: MCU + Screen)
+## Option3: (Marlin: Compatible MCU + Screen)
 
 
 Guide in progress, please ask in the discord.
