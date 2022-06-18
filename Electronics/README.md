@@ -9,6 +9,7 @@
 
 For klipper users with a standalone raspberry pi:
 
+Insert SD card into your PC, download and install Pios on the SD card. [Download Pios here](https://www.raspberrypi.com/software/)
 
 Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/)
 
