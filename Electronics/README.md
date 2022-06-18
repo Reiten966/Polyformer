@@ -8,7 +8,7 @@
 
 
 - Insert SD card into your PC, download and install Pios on the SD card. [Download Pios here](https://www.raspberrypi.com/software/)
-
+- After installation, remove and reinsert the SD card.
 
 - Set up network SSID on the pi:
 
