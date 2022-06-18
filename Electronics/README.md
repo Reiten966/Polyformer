@@ -7,35 +7,35 @@
 ## Option1: (Klipper: Standalone Pi + Compatible MCU)
 
 
- - Insert SD card into your PC, download and install Pios on the SD card. [Download Pios here](https://www.raspberrypi.com/software/)
+- Insert SD card into your PC, download and install Pios on the SD card. [Download Pios here](https://www.raspberrypi.com/software/)
 
 
- - Set up network SSID on the pi:
+- Set up network SSID on the pi:
 
     Open your favorite text editor on your computer.
     The basic editor from your operating system will be fine (Notepad for example).
     Copy and paste these lines into it:
-```
-country=US
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-network={
-  ssid="YOURSSID"
-  scan_ssid=1
-  psk="YOURPASSWORD"
-  key_mgmt=WPA-PSK
-}
-```
-Replace variables with your SSID and password, and change the country value if needed.
-Then save the file as wpa_supplicant.conf and copy the file to the boot partition.
+    ```
+    country=US
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    network={
+      ssid="YOURSSID"
+      scan_ssid=1
+      psk="YOURPASSWORD"
+      key_mgmt=WPA-PSK
+    }
+    ```
+    Replace variables with your SSID and password, and change the country value if needed.
+    Then save the file as wpa_supplicant.conf and copy the file to the boot partition.
 
 
- - Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/) starting from **chapter 2.2**
+- Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/) starting from **chapter 2.2**
 
 
- - And then please follow the guide to [install Klipper on SKR pico](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
+- And then please follow the guide to [install Klipper on SKR pico](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
 
- - And then add the printer.cfg to the mainsail web interface.
+- And then add the printer.cfg to the mainsail web interface.
 
 
 
