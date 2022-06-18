@@ -23,6 +23,8 @@
 
 - And then please follow the guide to [install Klipper on SKR pico](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
 
+- Type the IP address we gained for SSH in the browser on a computer within the same network to access mainsail.
+
 - And then add the printer.cfg to the mainsail web interface.
 
 
