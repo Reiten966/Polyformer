@@ -22,6 +22,8 @@
 
 
 - And then please follow the guide to [install Klipper on SKR pico](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
+- If you do not wish to use the pre-complied firmware, here is the config for Uart communication firmware.
+- ![image](https://user-images.githubusercontent.com/55605342/174428739-3855dda7-ab38-4942-935e-40f5d6ef6b0a.png)
 
 - Type the IP address we gained for SSH in the browser on a computer within the same network to access mainsail.
 
