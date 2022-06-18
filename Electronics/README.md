@@ -30,7 +30,7 @@ Replace variables with your SSID and password, and change the country value if n
 Then save the file as wpa_supplicant.conf and copy the file to the boot partition.
 
 
-Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/)
+Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/) starting from **chapter 2.2**
 
 
 And then please follow the guide to [install Klipper on SKR pico](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
