@@ -7,9 +7,28 @@
 ## Option1: (Klipper: Standalone Pi + Compatible MCU)
 
 
-For klipper users with a standalone raspberry pi:
-
 Insert SD card into your PC, download and install Pios on the SD card. [Download Pios here](https://www.raspberrypi.com/software/)
+
+
+Set up network SSID on the pi:
+
+Open your favorite text editor on your computer.
+The basic editor from your operating system will be fine (Notepad for example).
+Copy and paste these lines into it:
+```
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+  ssid="YOURSSID"
+  scan_ssid=1
+  psk="YOURPASSWORD"
+  key_mgmt=WPA-PSK
+}
+```
+Replace variables with your SSID and password, and change the country value if needed.
+Then save the file as wpa_supplicant.conf and copy the file to the boot partition.
+
 
 Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/)
 
@@ -24,8 +43,6 @@ And then add the printer.cfg to the mainsail web interface.
 
 ## Option2: (Klipper: Voron printer + Compatible MCU)
 
-
-For klipper users with an existing printer:
 
 
 Plug the SKR pico to the pi via USB on your printer, and add the polyformer.cfg into your printer's config as below
