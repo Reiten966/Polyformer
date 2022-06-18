@@ -9,7 +9,7 @@
 
 - Insert SD card into your PC, download and install Pios on the SD card. [Download Pios here](https://www.raspberrypi.com/software/)
 - Before you install the OS, please configure your pi's username, password, and network(SSIDs are upper case sensitive!!!) in the setting.
-- It takes sometime if the Pi is first time boot up upon an install. Please be patient for 5 minutes.
+- It takes sometime if the Pi is first time booting up upon an install. Please be patient for 5 minutes.
 
 
 ![image](https://user-images.githubusercontent.com/55605342/174422910-c1eb13dd-0ef4-4d33-b69c-427f8a600450.png)
