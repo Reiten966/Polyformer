@@ -28,6 +28,11 @@
     ```
     Replace variables with your SSID and password, and change the country value if needed.
     Then save the file as **wpa_supplicant.conf** and copy the file to the boot partition.
+    And then add a file called ssh in the boot folder, please add it with no extension.
+    
+    ![image](https://user-images.githubusercontent.com/55605342/174418475-a07b272f-b0ef-49c4-a77c-72ef1f8253ac.png)
+    
+    
 
 
 - Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/) starting from **chapter 2.2**
