@@ -17,6 +17,7 @@
 
 
 - Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/) starting from **chapter 2.2**
+  
   Copy and right click on the terminal to paste codes.
 
 
