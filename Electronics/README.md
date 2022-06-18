@@ -27,7 +27,7 @@
     }
     ```
     Replace variables with your SSID and password, and change the country value if needed.
-    Then save the file as wpa_supplicant.conf and copy the file to the boot partition.
+    Then save the file as **wpa_supplicant.conf** and copy the file to the boot partition.
 
 
 - Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/) starting from **chapter 2.2**
