@@ -9,6 +9,9 @@
 [Polyformer assembly video part 3](https://www.youtube.com/watch?v=d54wQbAX7XY&t=61s)
 
 
+[Polyformer assembly video part 4](https://youtu.be/LeM5dLHGVpM)
+
+
 [Bottle cutter assembly video (Needs update)](https://www.youtube.com/watch?v=mIvZ6ZM0HBI)
 
 
