@@ -1,21 +1,32 @@
-# Wiring Guide
-
-![Polyformer-Electronics-RPi-SKR-Pico1 0](https://user-images.githubusercontent.com/55605342/173913205-4c073081-22fa-4f03-8d1d-62b9d70ea6fb.png)
 
 # Firmware Setup
+
+### Its a good idea to flash the firmware for Pi and MCU **BEFORE** you follow the part 4 video and install them on the machine.
 
 ## Option1: (Klipper: Standalone Pi + Compatible MCU)
 
 
-For klipper users with a standalone raspberry pi:
+- Insert SD card into your PC, download and install Pios on the SD card. [Download Pios here](https://www.raspberrypi.com/software/)
+- Before you install the OS, please configure your pi's username, password, and network(SSIDs are upper case sensitive!!!) in the setting.
+- It takes sometime if the Pi is first time booting up upon an install. Please be patient for 5 minutes and 5 minutes only.
 
 
-Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/)
+![image](https://user-images.githubusercontent.com/55605342/174422910-c1eb13dd-0ef4-4d33-b69c-427f8a600450.png)
+    
 
 
-And then please follow the guide to [install Klipper on SKR pico](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
+- Please first follow the guide to [install klipper on raspberry pi](https://www.lpomykal.cz/kiauh-installation-guide/) starting from **chapter 2.2**
+  
+  Copy and right click on the terminal to paste codes.
 
-And then add the printer.cfg to the mainsail web interface.
+
+- And then please follow the guide to [install Klipper on SKR pico](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
+- If you do not wish to use the pre-complied firmware, here is the config for Uart communication firmware.
+- ![image](https://user-images.githubusercontent.com/55605342/174428739-3855dda7-ab38-4942-935e-40f5d6ef6b0a.png)
+
+- Type the IP address we gained for SSH in the browser on a computer within the same network to access mainsail.
+
+- And then add the printer.cfg to the mainsail web interface.
 
 
 
@@ -24,20 +35,23 @@ And then add the printer.cfg to the mainsail web interface.
 ## Option2: (Klipper: Voron printer + Compatible MCU)
 
 
-For klipper users with an existing printer:
 
-
-Plug the SKR pico to the pi via USB on your printer, and add the polyformer.cfg into your printer's config as below
+- Plug the SKR pico to the pi via USB on your printer, and add the polyformer.cfg into your printer's config as below
 ![image](https://user-images.githubusercontent.com/55605342/166185969-eca3ac38-87a4-4fdb-8bb0-ddc4806e66f2.png)
-And then include the polyformer.cfg in your main printer.cfg as below
+- And then include the polyformer.cfg in your main printer.cfg as below
 ![image](https://user-images.githubusercontent.com/55605342/166186076-9d54991d-e156-47dc-b81a-397d029f8e0a.png)
 
-[SKR pico installation guide here](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
+- [SKR pico installation guide here](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
 
 ## Option3: (Marlin: Compatible MCU + Screen)
 
 
 Guide in progress, please ask in the discord.
+
+# Wiring Guide
+
+![Polyformer-Electronics-RPi-SKR-Pico1 0](https://user-images.githubusercontent.com/55605342/173913205-4c073081-22fa-4f03-8d1d-62b9d70ea6fb.png)
+
 
 
 # PID Calibration Procedure
