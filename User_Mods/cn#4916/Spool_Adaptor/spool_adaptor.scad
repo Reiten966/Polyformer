@@ -4,7 +4,7 @@ difference() {
   union() {
       scale([0.99,0.99,1])
       difference() {
-    import("/Volumes/sniff/Downloads/_polyformer/[Accent Color] Spool_Shaft.stl");
+    import("[Accent Color] Spool_Shaft.stl");
        translate([0,0,-0.1])
           cylinder(d=78,75);
       }
