@@ -79,10 +79,12 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
       * Micro-controller Architecture = `Raspberry Pi RP2040`
       * IF USE USB
          * Communication interface = `USB`
+             ![klipper_menuconfig](https://user-images.githubusercontent.com/55605342/178121718-b5b6baf3-de33-4c4a-b05d-788bdb36a745.png)
       * ElSE IF USE UART0
          * Communication interface = `Serial (on UART0 GPIO1/GPIO0)`
+             ![image](https://user-images.githubusercontent.com/55605342/178122140-dbb68adf-d975-424e-9f00-9be30a87eba8.png)
 
-      ![klipper_menuconfig](https://user-images.githubusercontent.com/55605342/178121718-b5b6baf3-de33-4c4a-b05d-788bdb36a745.png)
+
    2. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
    3. Run the command `make`
    4. The `klipper.uf2` file will be generated in the folder `home/pi/kliiper/out` when the `make` command completed. Use your windows PC to copy the file from the Pi's folder using [winscp](https://winscp.net/download/WinSCP-5.21.1-Setup.exe) to your PC.
