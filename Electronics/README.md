@@ -74,8 +74,7 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
 
 - Build firmware image
 
-   1. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to download klipper source code to raspberry pi
-   2. `Building the micro-controller` with the configuration shown below.
+   1. `Building the micro-controller` with the configuration shown below.
       * [*] Enable extra low-level configuration options
       * Micro-controller Architecture = `Raspberry Pi RP2040`
       * IF USE USB
@@ -83,36 +82,34 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
       * ElSE IF USE UART0
          * Communication interface = `Serial (on UART0 GPIO1/GPIO0)`
 
-      <img src=Images/klipper_menuconfig.png width="800" /><br/>
-   3. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
-   4. Run the command `make`
-   5. The `klipper.uf2` file will be generated in the folder `home/pi/kliiper/out` when the `make` command completed. And you can use the windows computer under the same LAN as raspberry pi to copy `klipper.uf2` from raspberry pi to the computer with `pscp` command in the CMD terminal. such as `pscp -C pi@192.168.0.101:/home/pi/klipper/out/klipper.uf2 c:\klipper.uf2`(The terminal may prompt that `The server's host key is not cached` and ask `Store key in cache?((y/n)`, Please type `y` to store. And then it will ask for a password, please type the default password `raspberry` for raspberry pi)
+      ![klipper_menuconfig](https://user-images.githubusercontent.com/55605342/178121718-b5b6baf3-de33-4c4a-b05d-788bdb36a745.png)
+   2. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
+   3. Run the command `make`
+   4. The `klipper.uf2` file will be generated in the folder `home/pi/kliiper/out` when the `make` command completed. Use your windows PC to copy the file from the Pi's folder using [winscp](https://winscp.net/download/WinSCP-5.21.1-Setup.exe) to your PC.
 
 ## Firmware Installation
 
-1. You can use the method in [Build Firmware Image 2.5](#build-firmware-image) or use a tool such as `cyberduck` or `winscp` to copy the `klipper.uf2` file from your pi to your computer.
-2. Insert a jumper on the `Boot` pins of the motherboard and click the `Reset` button to enter the burn mode (Note: If you want to use USB to power the motherboard, you need to insert a jumper on `USB Power`. When there is 12V / 24V power supply, it is best to remove the jumper)
-   <img src=Images/boot.png width="800" /><br/>
-3. Connect USB-C to computer, then you will see a USB flash drive named `RPI-PR2`, copy `klipper-USB.uf2`, `klipper-UART0.uf2` provided by us or `klipper.uf2` compiled by yourself to the USB flash drive, the motherboard will automatically reboot and update the firmware, the computer will re-identify this USB flash drive means the firmware update
+1. Insert a jumper on the `Boot` pins of the motherboard and click the `Reset` button to enter the burn mode (Note: If you want to use USB to power the motherboard, you need to insert a jumper on `USB Power`. When there is 12V / 24V power supply, it is best to remove the jumper)
+   ![boot](https://user-images.githubusercontent.com/55605342/178121734-eed02614-2aa9-4460-aae4-94c4eef7b908.png)
+2. Connect USB-C to computer, then you will see a USB flash drive named `RPI-PR2`, copy `klipper-USB.uf2`, `klipper-UART0.uf2` provided by us or `klipper.uf2` compiled by yourself to the USB flash drive, the motherboard will automatically reboot and update the firmware, the computer will re-identify this USB flash drive means the firmware update
 is complete, unplug the `boot jumper` and click the `Reset` button to enter normal working mode
-   <img src=Images/msc.png width="800" /><br/>
-4. you can confirm that the flash was successful, by running `ls /dev/serial/by-id`.  if the flash was successful, this should now show a klipper device, similar to:
+   ![msc](https://user-images.githubusercontent.com/55605342/178121736-f8d809a8-eca1-463c-b515-508fa1a1187f.png)
+3. you can confirm that the flash was successful, by running `ls /dev/serial/by-id`.  if the flash was successful, this should now show a klipper device, similar to:
 
-   ![](./Images/rp2040_id.png)
+   ![rp2040_id](https://user-images.githubusercontent.com/55605342/178121739-78c09143-54f3-41ff-b319-ec3552a6ac16.png)
 
-   (note: this test is not appicable if the firmware was compiled for UART, rather than USB)
+   (note: this test is needed for USB configuration)
 
 ## Configure the printer parameters
 ### Basic configuration
-1. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to `Configuring OctoPrint to use Klipper`
-2. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to `Configuring Klipper`. And use the configuration file [SKR Pico klipper.cfg](./SKR%20Pico%20klipper.cfg) as the underlying `printer.cfg`, which includes all the correct pinout for SKR Pico V1.0
-3. Refer to [klipper's official Config_Reference](https://www.klipper3d.org/Config_Reference.html) to configure the features you want.
-4. If you use USB to communicate with raspberry pi, run the `ls /dev/serial/by-id/*` command in raspberry pi to get the correct ID number of the motherboard, and set the correct ID number in `printer.cfg`. And wiring reference [here](#raspberry-pi-is-powered-by-an-external-5v-adapter-and-communicates-with-skr-pico-v10-via-usb)
+1. On your PC, open a web browser and go to the IP address we gained for SSH within the same network to access Mainsail.
+2. Replace the printer.cfg file from the mainsail interface with [printer.cfg](https://github.com/Reiten966/Polyformer/blob/main/Electronics/Firmware/printer.cfg).
+3. If you use USB to communicate with raspberry pi, ssh into the pi and run the `ls /dev/serial/by-id/*` command in raspberry pi to get the correct ID number of the motherboard, and set the correct ID number in `printer.cfg`. And wiring reference [here](#raspberry-pi-is-powered-by-an-external-5v-adapter-and-communicates-with-skr-pico-v10-via-usb)
     ```
     [mcu]
     serial: /dev/serial/by-id/usb-Klipper_rp2040_E66094A027831922-if00
     ```
-5. If you use UART0 to communicate with raspberry pi, you need to modify the following files by inserting the SD card into the computer or by SSH command. And wiring reference [here](#raspberry-pi-is-powered-by-the-motherboard-5v-and-communicates-with-skr-pico-v10-via-uart)
+4. If you use UART0 to communicate with raspberry pi, you need to modify the following files by inserting the SD card into the computer or by SSH command. And wiring reference [here](#raspberry-pi-is-powered-by-the-motherboard-5v-and-communicates-with-skr-pico-v10-via-uart)
    * Remove `console=serial0,115200` in `/boot/cmdline.txt`
    * Add `dtoverlay=pi3-miniuart-bt` at the end of file `/boot/config.txt`
    * Modify the configuration of `[mcu]` in `printer.cfg` to `serial: /dev/ttyAMA0` and enable `restart_method: command` by SSH
@@ -121,46 +118,6 @@ is complete, unplug the `boot jumper` and click the `Reset` button to enter norm
      serial: /dev/ttyAMA0
      restart_method: command
      ```
-
-  - Open the terminal and type:
-    - `cd ~`
-    - `git clone https://github.com/Klipper3d/klipper`
-    - `./klipper/scripts/install-octopi.sh`
-    - `cd ~/klipper/`
-    - `make menuconfig`
-  - This interface should show up
-
-  ![image](https://user-images.githubusercontent.com/70567811/177376894-3044c36f-76a9-4f95-bbcc-5fb976c3909a.png)
-
-  - Enable extra low-level configuration options
-    - If you use Option 1 : Communication interface must be USB
-    - If you use Option 2 : Communication interface must be UART (as on the picture above)
-  - Press q to quit and type `make` in the terminal
-  - When the command is complete, you must find a `klipper.uf2` file in `home/pi/klipper/out`
-  - Copy this file from the raspberry to your PC
-    - Type `pscp -C pi@192.168.0.101:/home/pi/klipper/out/klipper.uf2 c:\klipper.uf2` (replace by the IP of the Raspberry)
-  - You must now find the file in your PC
-
-- Firmware installation
-
-  - Insert a jumper on the boot pins of the motherboard and press the reset button
-
-    - If you use Option 1 : insert another jumper on the USB Power pins
-      ![image](https://user-images.githubusercontent.com/70567811/177376899-91eeb71d-1d88-4d02-88ab-720e13297121.png)
-
-  - Connect the USB-C to your PC, you’ll see a USB flash drive. Copy the klipper.uf2 on
-    it. The motherboard will automatically reboot and update the firmware, the
-    computer will re-identify this USB flash drive means the firmware update is
-    complete. Unplug the Boot jumper, and the USB-C from your PC, plug the
-    motherboard to the Raspberry by the option you chose and click the Reset button
-    to enter normal mode.
-  - You must be able to type `ls /dev/serial/by-id/*` and have an output like
-    `/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0`
-  - On your PC, open a web browser and go to the IP address we gained for SSH within
-    the same network to access Mainsail.
-  - Modify the printer.cfg file from the mainsail interface by printer.cfg.
-  - Update the serial part under [mcu] by the path you gained earlier.
-  - Follow the wiring guide.
 
 ## Option2: (Klipper: Voron printer + Compatible MCU)
 
