@@ -93,6 +93,7 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
    ![boot](https://user-images.githubusercontent.com/55605342/178121734-eed02614-2aa9-4460-aae4-94c4eef7b908.png)
 2. Connect USB-C to computer, then you will see a USB flash drive named `RPI-PR2`, copy `klipper-USB.uf2`, `klipper-UART0.uf2` provided by us or `klipper.uf2` compiled by yourself to the USB flash drive, the motherboard will automatically reboot and update the firmware, the computer will re-identify this USB flash drive means the firmware update
 is complete, unplug the `boot jumper` and click the `Reset` button to enter normal working mode
+
    ![msc](https://user-images.githubusercontent.com/55605342/178121736-f8d809a8-eca1-463c-b515-508fa1a1187f.png)
 3. you can confirm that the flash was successful, by running `ls /dev/serial/by-id`.  if the flash was successful, this should now show a klipper device, similar to:
 
