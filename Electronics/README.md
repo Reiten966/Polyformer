@@ -95,7 +95,7 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
 is complete, unplug the `boot jumper` and click the `Reset` button to enter normal working mode
 
    ![msc](https://user-images.githubusercontent.com/55605342/178121736-f8d809a8-eca1-463c-b515-508fa1a1187f.png) 
-3. **(note: this test is needed for USB configuration)** you can confirm that the flash was successful, by running `ls /dev/serial/by-id`.  if the flash was successful, this should now show a klipper device, similar to:
+3. **(note: this test is only needed for USB configuration)** you can confirm that the flash was successful, by running `ls /dev/serial/by-id`.  if the flash was successful, this should now show a klipper device, similar to:
 
    ![rp2040_id](https://user-images.githubusercontent.com/55605342/178121739-78c09143-54f3-41ff-b319-ec3552a6ac16.png)
 
