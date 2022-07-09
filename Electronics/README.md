@@ -91,15 +91,15 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
 
 1. Insert a jumper on the `Boot` pins of the motherboard and click the `Reset` button to enter the burn mode (Note: If you want to use USB to power the motherboard, you need to insert a jumper on `USB Power`. When there is 12V / 24V power supply, it is best to remove the jumper)
    ![boot](https://user-images.githubusercontent.com/55605342/178121734-eed02614-2aa9-4460-aae4-94c4eef7b908.png)
-2. Connect USB-C to computer, then you will see a USB flash drive named `RPI-PR2`, copy `klipper-USB.uf2`, `klipper-UART0.uf2` provided by us or `klipper.uf2` compiled by yourself to the USB flash drive, the motherboard will automatically reboot and update the firmware, the computer will re-identify this USB flash drive means the firmware update
+2. Connect USB-C to computer, then you will see a USB flash drive named `RPI-PR2`, copy `klipper.uf2` compiled by yourself to the USB flash drive, the motherboard will automatically reboot and update the firmware, the computer will re-identify this USB flash drive means the firmware update
 is complete, unplug the `boot jumper` and click the `Reset` button to enter normal working mode
 
-   ![msc](https://user-images.githubusercontent.com/55605342/178121736-f8d809a8-eca1-463c-b515-508fa1a1187f.png)
-3. you can confirm that the flash was successful, by running `ls /dev/serial/by-id`.  if the flash was successful, this should now show a klipper device, similar to:
+   ![msc](https://user-images.githubusercontent.com/55605342/178121736-f8d809a8-eca1-463c-b515-508fa1a1187f.png) 
+3. **(note: this test is needed for USB configuration)** you can confirm that the flash was successful, by running `ls /dev/serial/by-id`.  if the flash was successful, this should now show a klipper device, similar to:
 
    ![rp2040_id](https://user-images.githubusercontent.com/55605342/178121739-78c09143-54f3-41ff-b319-ec3552a6ac16.png)
 
-   (note: this test is needed for USB configuration)
+
 
 ## Configure the printer parameters
 ### Basic configuration
