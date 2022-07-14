@@ -1,7 +1,7 @@
 # Print Guide
 
 
-
+- Before you print anything, please print the **PolyCube** under the Tools folder and post your result in #print_help. The cube is a test for evaluating printer's performance and accuracy, we will help you intepret the result and suggest ways you can improve the quality.
 
 - It is recommended that you print these parts in PETG or ABS+. We are slowly working on making the parts work in PLA but you might run into unexpected issues that we haven't discovered yet.
 
