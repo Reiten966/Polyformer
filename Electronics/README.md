@@ -74,7 +74,13 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
 
 - Build firmware image
 
-   1. `Building the micro-controller` with the configuration shown below.
+   1. SSH into your pi and type
+      ```
+      cd ~/klipper/
+      make menuconfig
+      ```
+
+   2. Building the micro controller with the configuration shown below.
       * [*] Enable extra low-level configuration options
       * Micro-controller Architecture = `Raspberry Pi RP2040`
       * IF USE USB
@@ -85,9 +91,9 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
              ![image](https://user-images.githubusercontent.com/55605342/178122140-dbb68adf-d975-424e-9f00-9be30a87eba8.png)
 
 
-   2. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
-   3. Run the command `make`
-   4. The `klipper.uf2` file will be generated in the folder `home/pi/kliiper/out` when the `make` command completed. Use your windows PC to copy the file from the Pi's folder using [winscp](https://winscp.net/download/WinSCP-5.21.1-Setup.exe) to your PC.
+   3. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
+   4. Run the command `make`
+   5. The `klipper.uf2` file will be generated in the folder `home/pi/kliiper/out` when the `make` command completed. Use your windows PC to copy the file from the Pi's folder using [winscp](https://winscp.net/download/WinSCP-5.21.1-Setup.exe) to your PC.
 
 ## Firmware Installation
 
