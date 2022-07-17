@@ -75,7 +75,9 @@ If you can't get Klipper working with the UART in Option 2, try the USN which sh
 - Build firmware image
 
    1. SSH into your pi and type
+      
       `cd ~/klipper/`
+      
       `make menuconfig`
 
 
