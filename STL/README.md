@@ -16,5 +16,5 @@
 
 - All the functional parts can be printed on a 200mm x 200m build plate. The panels can be printed on a 220mm x 200mm plate.
 
-  Please also feel free to download and use the checklist tool to keep in track the parts printed.
+- Please also feel free to download and use the checklist tool to keep in track the parts printed.
 Credit to @SoliDeoGloria#8025
