@@ -3,7 +3,7 @@
 
 - Before you print anything, please print the **PolyCube** under the Tools folder and post your result in #print_help. The cube is a test for evaluating printer's performance and accuracy, we will help you intepret the result and suggest ways you can improve the quality.
 
-- It is recommended that you print these parts in PETG or ABS+. We are slowly working on making the parts work in PLA but you might run into unexpected issues that we haven't discovered yet.
+- It is recommended to use Superslicer or Cura which has individual control for overhangs. Prusaslicer is not recommended. You can also slow down the perimeter speed and increase fan speed if your slicer doesn't support lowering overhang speed.
 
 - Always dry your filament before printing mechanical parts, especially PETG. The blobs and strings cause by wet filaments can cause binding and malfunctioning the gearbox.
 
@@ -16,5 +16,5 @@
 
 - All the functional parts can be printed on a 200mm x 200m build plate. The panels can be printed on a 220mm x 200mm plate.
 
-  Please also feel free to download and use the checklist tool to keep in track the parts printed.
+- Please also feel free to download and use the checklist tool to keep in track the parts printed.
 Credit to @SoliDeoGloria#8025
