@@ -16,4 +16,5 @@
 
 
 Andromeda updates needs new assembly videos which is still in the works.
+
 Please refer to the CAD file for assembly and for the lengths of screws.
