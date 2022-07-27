@@ -15,3 +15,6 @@
 [Bottle cutter assembly video (Needs update)](https://www.youtube.com/watch?v=mIvZ6ZM0HBI)
 
 
+Andromeda updates needs new assembly videos which is still in the works.
+
+Please refer to the CAD file for assembly and for the lengths of screws.
