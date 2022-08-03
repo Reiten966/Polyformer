@@ -3,7 +3,7 @@
 
 Polyformer is an open-source project that aims to recycle plastics into FDM filaments
 
-Join the Discord by signing up $1 github sponsorship or $1 Patreon, Link is on the right
+Join the Discord by signing up $1 Github sponsorship or $1 Patreon, Link is on the right
 
 ![Hero_34](https://user-images.githubusercontent.com/55605342/166126684-d6c5657a-c4c1-4474-a20b-533af1ea221a.jpg)
 
