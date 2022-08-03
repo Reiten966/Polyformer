@@ -10,6 +10,4 @@ Polyformer is an open-source project that aims to recycle plastics into FDM fila
 
 
 
-[Discord](https://discord.gg/sPX745cn4s)
-
 [Project Page](http://www.reiten.design/polyformer)
