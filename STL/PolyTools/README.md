@@ -22,7 +22,7 @@ Post your result in #print_help
 
 ## PolyPlane
 
-Used for sharpening bearings, achieving a better cutting performance. 
+Used for sharpening bearings, achieving a better cutting performance
 
 
 -4x M3x8mm
