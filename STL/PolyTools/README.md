@@ -2,6 +2,8 @@
 
 ## PolyCube
 
+Testing printer accuracy and overhang capability
+
 ## PolyPlane
 
 Used for sanding bearings
@@ -13,4 +15,8 @@ Used for sanding bearings
 
 ## PolyTray
 
+-19x 6x3mm Neodymium magnets
+
 ## PolyClip
+
+-No assembly, print-in-place
