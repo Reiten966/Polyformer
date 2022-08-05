@@ -31,8 +31,12 @@ Used for sharpening bearings, achieving a better cutting performance
 
 ## PolyTray
 
+Identifying screws size and storing screws
+
 -19x 6x3mm Neodymium magnets
 
 ## PolyClip
+
+Constructing bigger boxes using smaller boxes for bottle collection
 
 -No assembly, print-in-place
