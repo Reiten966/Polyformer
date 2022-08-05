@@ -4,6 +4,22 @@
 
 Testing printer accuracy and overhang capability
 
+Items that are tested:
+
+-45 degree overhangs
+
+-Print-in-place tolerance
+
+-Flow percentage
+
+-Compliant 12mm tube fastener
+
+-Bearing fitment
+
+-Vertical 12mm tube fitment
+
+Post your result in #print_help
+
 ## PolyPlane
 
 Used for sanding bearings
