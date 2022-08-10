@@ -12,7 +12,7 @@
 [Polyformer assembly video part 4](https://youtu.be/LeM5dLHGVpM)
 
 
-[Bottle cutter assembly video (Needs update)](https://www.youtube.com/watch?v=mIvZ6ZM0HBI)
+[PolyCutter Lite assembly video](https://www.youtube.com/watch?v=EgzWEFJ99so)
 
 
 Andromeda updates needs new assembly videos which is still in the works.
