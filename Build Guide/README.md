@@ -15,3 +15,6 @@
 Andromeda updates needs new assembly videos which are still in the works.
 
 Please refer to the Assembly Guides made by @lhong820#0249 for assembly.
+
+
+Will do an operation video...Make sure you run Polyformer in a well ventilated area.
