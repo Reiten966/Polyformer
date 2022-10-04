@@ -1,1 +1,13 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930.45 930.85"><defs><style>.cls-1{fill:#c61432;}.cls-2{fill:#f0f0f2;}</style></defs><circle class="cls-1" cx="465.23" cy="465.23" r="465.23"/><path class="cls-2" d="M504.47,257.84c-137.45-2.48-250.15,110.78-247,248.21A242.47,242.47,0,0,0,376.64,709.32a111.86,111.86,0,0,1,54.62,96.34V960.12a.53.53,0,0,0,.45.52,469.78,469.78,0,0,0,136.58,0,.53.53,0,0,0,.45-.52V805.66a112.24,112.24,0,0,1,54.92-96.52A242.44,242.44,0,0,0,742.6,500.4C742.6,367.91,636.39,260.22,504.47,257.84Z" transform="translate(-34.77 -34.77)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 930.5 930.8" style="enable-background:new 0 0 930.5 930.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#C80016;}
+	.st1{fill:#F0F0F2;}
+</style>
+<circle class="st0" cx="465.2" cy="465.2" r="465.2"/>
+<path class="st1" d="M469.7,223.1c-137.4-2.5-250.2,110.8-247,248.2c1.9,83.8,47,160.7,119.2,203.3c33.9,20.2,54.7,56.8,54.6,96.3
+	v154.5c0,0.3,0.2,0.5,0.5,0.5c45.3,6.7,91.3,6.7,136.6,0c0.3,0,0.4-0.3,0.5-0.5V770.9c0-39.6,20.9-76.3,54.9-96.5
+	c73.8-43.7,119-123,118.9-208.7C707.8,333.1,601.6,225.4,469.7,223.1z"/>
+</svg>
