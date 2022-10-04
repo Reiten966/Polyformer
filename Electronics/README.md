@@ -1,6 +1,6 @@
 # Firmware Setup
 
-### Its a good idea to flash the firmware for Pi and MCU **BEFORE** you follow the part 4 video and install them on the machine.
+### Its a good idea to flash the firmware for Pi and MCU **BEFORE** you follow the part 4 video to install them on the machine.
 
 ## Option1: (Klipper: Standalone Pi + Compatible MCU)
 
