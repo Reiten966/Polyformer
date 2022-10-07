@@ -12,6 +12,8 @@
 [PolyCutter Lite assembly video](https://www.youtube.com/watch?v=EgzWEFJ99so)
 
 
+[Polyformer operation video](https://www.youtube.com/watch?v=f05WWMm3e6w&t=1s)
+
 
 Please refer to the Assembly Guides made by @lhong820#0249 for assembly.
 
