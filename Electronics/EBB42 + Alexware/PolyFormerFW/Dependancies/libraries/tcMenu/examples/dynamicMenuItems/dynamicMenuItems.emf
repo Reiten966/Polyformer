@@ -1,0 +1,554 @@
+{
+  "version": "1.00",
+  "projectName": "This example shows how to work with menu items in a dynamic way, eg creating content at runtime.",
+  "author": "dave",
+  "items": [
+    {
+      "parentId": 0,
+      "type": "boolItem",
+      "item": {
+        "naming": "ON_OFF",
+        "name": "Main Power",
+        "variableName": "MainPower",
+        "id": 1,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Oven",
+        "variableName": "Oven",
+        "id": 2,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Pizza Maker",
+        "variableName": "PizzaMaker",
+        "id": 3,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 300,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "C",
+        "step": 1,
+        "name": "Oven Temp",
+        "variableName": "PizzaMakerOvenTemp",
+        "id": 4,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "scrollItem",
+      "item": {
+        "itemWidth": 10,
+        "eepromOffset": 0,
+        "numEntries": 6,
+        "choiceMode": "ARRAY_IN_RAM",
+        "variable": "pizzaToppings",
+        "name": "Topping 1",
+        "variableName": "PizzaMakerTopping1",
+        "id": 5,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "scrollItem",
+      "item": {
+        "itemWidth": 10,
+        "eepromOffset": 0,
+        "numEntries": 6,
+        "choiceMode": "ARRAY_IN_RAM",
+        "variable": "pizzaToppings",
+        "name": "Topping 2",
+        "variableName": "PizzaMakerTopping2",
+        "id": 6,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "scrollItem",
+      "item": {
+        "itemWidth": 10,
+        "eepromOffset": 0,
+        "numEntries": 6,
+        "choiceMode": "ARRAY_IN_RAM",
+        "variable": "pizzaToppings",
+        "name": "Topping 3",
+        "variableName": "PizzaMakerTopping3",
+        "id": 7,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "actionMenu",
+      "item": {
+        "name": "Start Cooking",
+        "variableName": "PizzaMakerStartCooking",
+        "id": 8,
+        "eepromAddress": -1,
+        "functionName": "onStartCooking",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Dialogs",
+        "variableName": "Dialogs",
+        "id": 9,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 9,
+      "type": "actionMenu",
+      "item": {
+        "name": "Question",
+        "variableName": "DialogsQuestion",
+        "id": 10,
+        "eepromAddress": -1,
+        "functionName": "onDialogQuestion",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 9,
+      "type": "actionMenu",
+      "item": {
+        "name": "Information",
+        "variableName": "DialogsInformation",
+        "id": 11,
+        "eepromAddress": -1,
+        "functionName": "onDialogInfo",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 9,
+      "type": "actionMenu",
+      "item": {
+        "name": "Controller",
+        "variableName": "DialogsController",
+        "id": 12,
+        "eepromAddress": -1,
+        "functionName": "onDialogController",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 9,
+      "type": "boolItem",
+      "item": {
+        "naming": "ON_OFF",
+        "name": "Allow Observer",
+        "variableName": "DialogsDialogBack",
+        "id": 14,
+        "eepromAddress": -1,
+        "functionName": "onDialogBack",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 9,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Blocked Sub",
+        "variableName": "DialogsBlockedSub",
+        "id": 15,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 9,
+      "type": "actionMenu",
+      "item": {
+        "name": "Blocked Action",
+        "variableName": "DialogsBlockedAction",
+        "id": 17,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 9,
+      "type": "boolItem",
+      "item": {
+        "naming": "TRUE_FALSE",
+        "name": "Blocked Bool",
+        "variableName": "DialogsBlockedBool",
+        "id": 18,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "runtimeList",
+      "item": {
+        "initialRows": 0,
+        "name": "List",
+        "variableName": "List",
+        "id": 13,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Runtimes",
+        "variableName": "Runtimes",
+        "id": 19,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 19,
+      "type": "textItem",
+      "item": {
+        "textLength": 5,
+        "itemType": "PLAIN_TEXT",
+        "name": "TextItem",
+        "variableName": "TextItem",
+        "id": 20,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 19,
+      "type": "textItem",
+      "item": {
+        "textLength": 0,
+        "itemType": "IP_ADDRESS",
+        "name": "IpItem",
+        "variableName": "IpItem",
+        "id": 21,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    }
+  ],
+  "codeOptions": {
+    "embeddedPlatform": "ARDUINO32",
+    "lastDisplayUuid": "4dcb12ec-13d8-4466-b8b6-bd575eae4612",
+    "lastInputUuid": "71DAF854-DF8D-4F0B-9039-23C5583C85B1",
+    "lastRemoteUuid": "2c101fec-1f7d-4ff3-8d2b-992ad41e7fcb",
+    "lastRemoteUuids": [
+      "2c101fec-1f7d-4ff3-8d2b-992ad41e7fcb"
+    ],
+    "lastThemeUuid": "03c6b25f-db63-402a-8447-a5ce1484c14d",
+    "applicationUUID": "5f22995e-8da2-49c4-9ec8-d055901003af",
+    "applicationName": "Dynamic Menus",
+    "lastProperties": [
+      {
+        "name": "DISPLAY_VARIABLE",
+        "latestValue": "gfx",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_TYPE",
+        "latestValue": "Adafruit_ST7735",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_WIDTH",
+        "latestValue": "160",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_HEIGHT",
+        "latestValue": "128",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_RESET_PIN",
+        "latestValue": "-1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_CS_PIN",
+        "latestValue": "1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_RS_PIN",
+        "latestValue": "0",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_DATA_PIN",
+        "latestValue": "-1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_CLOCK_PIN",
+        "latestValue": "-1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "ST7735_TAB_TYPE",
+        "latestValue": "INITR_BLACKTAB",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_ROTATION",
+        "latestValue": "1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "UPDATES_PER_SEC",
+        "latestValue": "5",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "MK_KEYBOARD_NEXT",
+        "latestValue": "B",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_KEYBOARD_BACK",
+        "latestValue": "A",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_KEYBOARD_ENTER",
+        "latestValue": "*",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_KEYBOARD_DEL",
+        "latestValue": "#",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_KEYBOARD_LAYOUT",
+        "latestValue": "LAYOUT_4X4",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ROW_PIN_0",
+        "latestValue": "11",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ROW_PIN_1",
+        "latestValue": "10",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ROW_PIN_2",
+        "latestValue": "9",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ROW_PIN_3",
+        "latestValue": "8",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_COL_PIN_0",
+        "latestValue": "15",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_COL_PIN_1",
+        "latestValue": "14",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_COL_PIN_2",
+        "latestValue": "13",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_COL_PIN_3",
+        "latestValue": "12",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_KEYBOARD_DEVICE",
+        "latestValue": "io23017",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_REPEAT_START",
+        "latestValue": "850",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_REPEAT_INTERVAL",
+        "latestValue": "350",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_KEYBOARD_INTERRUPTS",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "SEPARATOR",
+        "latestValue": "",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_NEED_ENCODER",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_USE_PULL_UP",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ENCODER_A",
+        "latestValue": "6",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ENCODER_B",
+        "latestValue": "5",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ENCODER_SEL",
+        "latestValue": "9",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ENCODER_DEVICE",
+        "latestValue": "devicePins",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_POLLING_MODE",
+        "latestValue": "SWITCHES_POLL_KEYS_ONLY",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "MK_ENCODER_TYPE",
+        "latestValue": "FULL_CYCLE",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ITEM_FONT",
+        "latestValue": "def:,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_FONT",
+        "latestValue": "def:,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "BORDER_FOR_ACTIONS",
+        "latestValue": "0",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_SHOW_MODE",
+        "latestValue": "TITLE_FIRST_ROW",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "USE_SLIDER_ANALOG",
+        "latestValue": "true",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "NEED_EDITING_ICONS",
+        "latestValue": "true",
+        "subsystem": "THEME"
+      }
+    ],
+    "namingRecursive": true,
+    "saveToSrc": false,
+    "useCppMain": false,
+    "eepromDefinition": "",
+    "authenticatorDefinition": "",
+    "projectIoExpanders": [
+      "deviceIO:",
+      "mcp23017:io23017:32:10"
+    ],
+    "menuInMenuCollection": {
+      "menuDefinitions": []
+    },
+    "packageNamespace": "",
+    "appIsModular": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "tcMenu",
+    "keywords": "menu, IoT, display, encoder, ethernet",
+    "description": "Menu library for Arduino with IoT capabilities supporting full multi level navigation. Complete with a designer UI and CLI that can round trip. It has plugins for Adafruit_GFX, U8G2, TFT_eSPI and LiquidCrystalIO. Input is supported from Touch, Rotary Encoder, Digital / Analog joysticks, DfRobot, Keypad and more. Any menu can be remotely using embedCONTROL UI / API over Ethernet2, UIP, STM32 Ethernet and Serial / Bluetooth. Even works with no local display for remote control only.",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/davetcc/tcMenuLib"
+    },
+    "authors":
+    [
+      {
+        "name": "DaveTcc",
+        "url": "https://www.thecoderscorner.com",
+        "maintainer": true
+      }
+    ],
+    "dependencies":
+    [
+      {
+        "name": "IoAbstraction",
+        "authors": "DaveTCC"
+      }
+    ],
+    "version": "2.4.0",
+    "license": "Apache-2.0",
+    "frameworks": "arduino, mbed",
+    "platforms": "*"
+  }
+  

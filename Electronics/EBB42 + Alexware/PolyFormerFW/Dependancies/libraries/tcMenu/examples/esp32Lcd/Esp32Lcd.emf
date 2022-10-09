@@ -1,0 +1,357 @@
+{
+  "version": "1.00",
+  "projectName": "C:\\Users\\dave\\Documents\\Arduino\\tcLibraryDev\\lib\\tcMenu\\examples\\esp32Lcd\\Esp32Lcd.emf",
+  "author": "dave",
+  "items": [
+    {
+      "parentId": 0,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 100,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "%",
+        "name": "Percentage",
+        "variableName": "Percentage",
+        "id": 1,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "enumItem",
+      "item": {
+        "enumEntries": [
+          "Apples",
+          "Bananas",
+          "Oranges",
+          "Grapes"
+        ],
+        "name": "Foods",
+        "variableName": "Foods",
+        "id": 2,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "boolItem",
+      "item": {
+        "naming": "ON_OFF",
+        "name": "Power",
+        "variableName": "Peeled",
+        "id": 3,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "runtimeList",
+      "item": {
+        "initialRows": 0,
+        "name": "MyList",
+        "variableName": "MyList",
+        "id": 4,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "rgbItem",
+      "item": {
+        "includeAlphaChannel": false,
+        "name": "RGB",
+        "variableName": "RGB",
+        "id": 5,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Grid",
+        "variableName": "Grid",
+        "id": 6,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 6,
+      "type": "floatItem",
+      "item": {
+        "numDecimalPlaces": 3,
+        "name": "Float value",
+        "variableName": "GridFloatValue",
+        "id": 9,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 6,
+      "type": "boolItem",
+      "item": {
+        "naming": "ON_OFF",
+        "name": "LED1",
+        "variableName": "GridLED1",
+        "id": 7,
+        "eepromAddress": -1,
+        "functionName": "onGridLed1",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 6,
+      "type": "boolItem",
+      "item": {
+        "naming": "ON_OFF",
+        "name": "LED2",
+        "variableName": "GridLED2",
+        "id": 8,
+        "eepromAddress": -1,
+        "functionName": "onGridLed2",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 6,
+      "type": "actionMenu",
+      "item": {
+        "name": "Up",
+        "variableName": "GridUp",
+        "id": 10,
+        "eepromAddress": -1,
+        "functionName": "onGridUp",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 6,
+      "type": "actionMenu",
+      "item": {
+        "name": "Down",
+        "variableName": "GridDown",
+        "id": 11,
+        "eepromAddress": -1,
+        "functionName": "onGridDown",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 6,
+      "type": "scrollItem",
+      "item": {
+        "itemWidth": 10,
+        "eepromOffset": 122,
+        "numEntries": 4,
+        "choiceMode": "ARRAY_IN_RAM",
+        "variable": "ramChoices",
+        "name": "New Choice Item",
+        "variableName": "GridNewChoiceItem",
+        "id": 12,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Connectivity",
+        "variableName": "Connectivity",
+        "id": 14,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 14,
+      "type": "customBuildItem",
+      "item": {
+        "menuType": "REMOTE_IOT_MONITOR",
+        "name": "IoT Monitor",
+        "variableName": "ConnectivityIoTMonitor",
+        "id": 15,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": true,
+        "visible": true
+      }
+    }
+  ],
+  "codeOptions": {
+    "embeddedPlatform": "ARDUINO_ESP32",
+    "lastDisplayUuid": "d4c84106-fa87-4024-b91e-053e17a52b8f",
+    "lastInputUuid": "6dd87e7d-e751-4912-a70d-91793b1d3d87",
+    "lastRemoteUuid": "ba23b2a7-040e-40e2-8fae-d45c82cf450b",
+    "lastRemoteUuids": [
+      "ba23b2a7-040e-40e2-8fae-d45c82cf450b"
+    ],
+    "lastThemeUuid": "850dc0a3-f534-47c2-94d8-1e64ff368a54",
+    "applicationUUID": "7833942f-2ef4-486f-9713-045552b747e8",
+    "applicationName": "Esp32Lcd",
+    "lastProperties": [
+      {
+        "name": "LCD_WIDTH",
+        "latestValue": "20",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_HEIGHT",
+        "latestValue": "4",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "I2C_ADDRESS",
+        "latestValue": "0x27",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "PIN_LAYOUT",
+        "latestValue": "RS_RW_EN",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "WIRE_VARIABLE",
+        "latestValue": "Wire",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "UNO_OR_FULL",
+        "latestValue": "fullLcd",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "UPDATES_PER_SEC",
+        "latestValue": "2",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "PULLUP_LOGIC",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "INTERRUPT_SWITCHES",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "SWITCH_IODEVICE",
+        "latestValue": "",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_A",
+        "latestValue": "26",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_B",
+        "latestValue": "36",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_OK",
+        "latestValue": "21",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_BACK_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_NEXT_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_IS_QUARTER_CYCLE",
+        "latestValue": "false",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "SERIAL_PORT",
+        "latestValue": "Serial",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "HARDWARE_PORT",
+        "latestValue": "true",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ITEM_FONT",
+        "latestValue": "def:,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_FONT",
+        "latestValue": "def:,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "BORDER_FOR_ACTIONS",
+        "latestValue": "0",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_SHOW_MODE",
+        "latestValue": "TITLE_FIRST_ROW",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "USE_SLIDER_ANALOG",
+        "latestValue": "true",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "NEED_EDITING_ICONS",
+        "latestValue": "false",
+        "subsystem": "THEME"
+      }
+    ],
+    "namingRecursive": true,
+    "saveToSrc": false,
+    "useCppMain": false,
+    "eepromDefinition": "",
+    "authenticatorDefinition": ""
+  }
+}

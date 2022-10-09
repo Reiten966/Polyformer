@@ -34,10 +34,12 @@ void pidLoop()
       Input = therm.getTemp();
       myPID.Compute();
       analogWrite(heaterPin, Output);
+      analogWrite(heaterPinAlt, Output);
       pidTime += 100;
     }
   } else {
     analogWrite(heaterPin, 0);
+    analogWrite(heaterPinAlt, 0);
   }
 }
 
@@ -106,6 +108,7 @@ void pidTune() {
     // by setOutputRange(). Don't change the value or the tuning results will be
     // incorrect.
     analogWrite(heaterPin, output);
+    analogWrite(heaterPinAlt, output);
 
     // here is a brief example of how to show a dialog, usually for information
     // or yes/no answers.
@@ -157,6 +160,7 @@ void pidTune() {
 //  // by setOutputRange(). Don't change the value or the tuning results will be
 //  // incorrect.
 //  analogWrite(heaterPin, output);
+//  analogWrite(heaterPinAlt, output);
 //
 //  Serial.print("Temperature: "); Serial.print(Input); Serial.print(" Output: "); Serial.println(output);
 //
@@ -177,6 +181,7 @@ void pidTune() {
 //
 //    // Turn the output off here.
 //    analogWrite(heaterPin, 0);
+//    analogWrite(heaterPinALt, 0);
 //
 //    //Set PID Values to RAM
 //    menuKp.setFromFloatingPointValue(tuner.getKp());

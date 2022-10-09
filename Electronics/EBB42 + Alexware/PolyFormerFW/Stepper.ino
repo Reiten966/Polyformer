@@ -1,5 +1,5 @@
 #define DRIVER_ADDRESS    0b00    // TMC2209 Driver address
-#define R_SENSE           0 //.11f   // SilentStepStick series use 0.11
+#define R_SENSE           0       //Using the internal sense resistor, so no value required
 int microstep;
 
 //#define RMS_CURRENT       600     // Motor RMS current in mA

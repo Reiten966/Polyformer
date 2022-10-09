@@ -1,0 +1,98 @@
+#######################################
+# Syntax Coloring Map For tcMenu
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+MenuManager	KEYWORD1
+AnalogMenuItem	KEYWORD1
+EnumMenuItem	KEYWORD1
+BooleanMenuItem	KEYWORD1
+TextMenuItem	KEYWORD1
+SubMenuItem	KEYWORD1
+BackMenuItem	KEYWORD1
+RemoteConnector	KEYWORD1
+ConnectorListener	KEYWORD1
+BaseDialog  KEYWORD1
+TitleWidget KEYWORD1
+LargeFixedNumber    KEYWORD1
+EditableLargeNumberMenuItem KEYWORD1
+ListRuntimeMenuItem KEYWORD1
+IpAddressMenuItem   KEYWORD1
+TimeStorage KEYWORD1
+TimeFormattedMenuItem   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+getBoolean	KEYWORD2
+setBoolean	KEYWORD2
+getCurrentValue	KEYWORD2
+setCurrentValue	KEYWORD2
+getTextValue	KEYWORD2
+setTextValue	KEYWORD2
+load	KEYWORD2
+save	KEYWORD2
+getRoot KEYWORD2
+isChanged	KEYWORD2
+setChanged	KEYWORD2
+isSendRemoteNeeded	KEYWORD2
+setSendRemoteNeeded	KEYWORD2
+isActive	KEYWORD2
+setActive	KEYWORD2
+setButtons  KEYWORD2
+show    KEYWORD2
+setUserData KEYWORD2
+copyIntoBuffer  KEYWORD2
+hide    KEYWORD2
+isInUse KEYWORD2
+getWidth    KEYWORD2
+getHeight   KEYWORD2
+getMaxValue KEYWORD2
+getNext KEYWORD2
+setNext KEYWORD2
+initialise  KEYWORD2
+getDialog   KEYWORD2
+getInstance KEYWORD2
+getBuffer   KEYWORD2
+getBufferSize   KEYWORD2
+getRendererType KEYWORD2
+setResetIntervalTimeSeconds KEYWORD2
+setResetCallback    KEYWORD2
+setFirstWidget  KEYWORD2
+takeOverDisplay KEYWORD2
+giveBackDisplay KEYWORD2
+resetToDefault  KEYWORD2
+decimalPointIndex   KEYWORD2
+setPrecision    KEYWORD2
+setFromFloat    KEYWORD2
+fromBcdPacked   KEYWORD2
+convertToBcdPacked  KEYWORD2
+getDigit    KEYWORD2
+setDigit    KEYWORD2
+getAsFloat  KEYWORD2
+isNegative  KEYWORD2
+setNegative KEYWORD2
+getWhole    KEYWORD2
+getFraction KEYWORD2
+getLargeNumber  KEYWORD2
+fastltoa    KEYWORD2
+fastltoa_mv KEYWORD2
+ltoaClrBuff KEYWORD2
+dpToDivisor KEYWORD2
+safeProgCpy KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+menuMgr	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DLG_VISIBLE LITERAL1
+DLG_HIDDEN  LITERAL1
+DLG_ACTION  LITERAL1

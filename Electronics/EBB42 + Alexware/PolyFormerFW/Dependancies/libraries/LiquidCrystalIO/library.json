@@ -1,0 +1,36 @@
+{
+    "name": "LiquidCrystalIO",
+    "keywords": "liquidcrystal, I2C, mbed, arduino, PCF8574, MCP23017, HD44780",
+    "description": "Forked version LiquidCrystal to work with I2C backpacks, PCF8574, MCP23017, shift registers, ports and arduino pins. Compatible with most Hitachi HD44780 chipsets on text-based LCDs. The library works in 4 bit, 8 bit or PORT mode.",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/davetcc/LiquidCrystalIO"
+    },
+    "authors":
+    [
+      {
+        "name": "DaveTcc",
+        "url": "https://www.thecoderscorner.com",
+        "maintainer": true
+      },
+      {
+        "name": "Adafruit/Arduino",
+        "url": "https://www.thecoderscorner.com",
+        "maintainer": false
+      }
+    ],
+    "dependencies":
+    [
+      {
+        "name": "IoAbstraction",
+        "authors": "DaveTCC",
+        "frameworks": "arduino, mbed"
+      }
+    ],
+    "version": "1.4.3",
+    "license": "LGPL-3.0-or-later",
+    "frameworks": "arduino, mbed",
+    "platforms": "*"
+  }
+  

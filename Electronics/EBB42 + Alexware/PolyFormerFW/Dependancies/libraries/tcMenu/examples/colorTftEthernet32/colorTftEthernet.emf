@@ -1,0 +1,566 @@
+{
+  "version": "1.00",
+  "projectName": "C:\\Users\\dave\\Documents\\Arduino\\tcLibraryDev\\lib\\tcMenu\\examples\\colorTftEthernet32\\colorTftEthernet.emf",
+  "author": "dave",
+  "items": [
+    {
+      "parentId": 0,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 255,
+        "offset": -128,
+        "divisor": 2,
+        "unitName": "V",
+        "name": "Voltage",
+        "variableName": "",
+        "id": 1,
+        "eepromAddress": 2,
+        "functionName": "onVoltageChange",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 255,
+        "offset": 0,
+        "divisor": 100,
+        "unitName": "A",
+        "name": "Current",
+        "variableName": "",
+        "id": 2,
+        "eepromAddress": 4,
+        "functionName": "onCurrentChange",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "enumItem",
+      "item": {
+        "enumEntries": [
+          "Current",
+          "Voltage"
+        ],
+        "name": "Limit",
+        "variableName": "",
+        "id": 3,
+        "eepromAddress": 6,
+        "functionName": "onLimitMode",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Settings",
+        "variableName": "",
+        "id": 4,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "boolItem",
+      "item": {
+        "naming": "YES_NO",
+        "name": "Pwr Delay",
+        "variableName": "",
+        "id": 5,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "actionMenu",
+      "item": {
+        "name": "Save all",
+        "variableName": "",
+        "id": 10,
+        "eepromAddress": -1,
+        "functionName": "onSaveRom",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Advanced",
+        "variableName": "",
+        "id": 11,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "boolItem",
+      "item": {
+        "naming": "ON_OFF",
+        "name": "S-Circuit Protect",
+        "variableName": "",
+        "id": 12,
+        "eepromAddress": 8,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "actionMenu",
+      "item": {
+        "name": "Hidden item",
+        "variableName": "",
+        "id": 16,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "boolItem",
+      "item": {
+        "naming": "ON_OFF",
+        "name": "Temp Check",
+        "variableName": "",
+        "id": 13,
+        "eepromAddress": 9,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "rgbItem",
+      "item": {
+        "includeAlphaChannel": false,
+        "name": "RGB",
+        "variableName": "",
+        "id": 26,
+        "eepromAddress": 16,
+        "functionName": "onRgbChanged",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "boolItem",
+      "item": {
+        "naming": "YES_NO",
+        "name": "Show Hidden",
+        "variableName": "ShowHidden",
+        "id": 30,
+        "eepromAddress": -1,
+        "functionName": "onShowHidden",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Status",
+        "variableName": "",
+        "id": 7,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 7,
+      "type": "floatItem",
+      "item": {
+        "numDecimalPlaces": 2,
+        "name": "Volt A0",
+        "variableName": "",
+        "id": 8,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 7,
+      "type": "floatItem",
+      "item": {
+        "numDecimalPlaces": 2,
+        "name": "Volt A1",
+        "variableName": "",
+        "id": 9,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Connectivity",
+        "variableName": "",
+        "id": 14,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 14,
+      "type": "textItem",
+      "item": {
+        "textLength": 20,
+        "itemType": "IP_ADDRESS",
+        "name": "Ip Address",
+        "variableName": "",
+        "id": 15,
+        "eepromAddress": 10,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 14,
+      "type": "customBuildItem",
+      "item": {
+        "menuType": "AUTHENTICATION",
+        "name": "Authenticator",
+        "variableName": "Authenticator",
+        "id": 28,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": true,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 14,
+      "type": "customBuildItem",
+      "item": {
+        "menuType": "REMOTE_IOT_MONITOR",
+        "name": "IoT Monitor",
+        "id": 29,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Rom Values",
+        "variableName": "",
+        "id": 20,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 20,
+      "type": "scrollItem",
+      "item": {
+        "itemWidth": 10,
+        "eepromOffset": 1024,
+        "numEntries": 10,
+        "choiceMode": "ARRAY_IN_EEPROM",
+        "name": "Rom Choice",
+        "variableName": "",
+        "id": 25,
+        "eepromAddress": 14,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 20,
+      "type": "scrollItem",
+      "item": {
+        "itemWidth": 10,
+        "eepromOffset": 0,
+        "numEntries": 10,
+        "choiceMode": "CUSTOM_RENDERFN",
+        "name": "Rom Location",
+        "variableName": "",
+        "id": 24,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 20,
+      "type": "textItem",
+      "item": {
+        "textLength": 10,
+        "itemType": "PLAIN_TEXT",
+        "name": "Rom Text",
+        "variableName": "",
+        "id": 21,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 20,
+      "type": "actionMenu",
+      "item": {
+        "name": "Save item",
+        "variableName": "",
+        "id": 23,
+        "eepromAddress": -1,
+        "functionName": "onSaveItem",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "actionMenu",
+      "item": {
+        "name": "Take display",
+        "variableName": "",
+        "id": 17,
+        "eepromAddress": -1,
+        "functionName": "onTakeDisplay",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    }
+  ],
+  "codeOptions": {
+    "embeddedPlatform": "ARDUINO32",
+    "lastDisplayUuid": "4dcb12ec-13d8-4466-b8b6-bd575eae4612",
+    "lastInputUuid": "6dd87e7d-e751-4912-a70d-91793b1d3d87",
+    "lastRemoteUuid": "0877131c-e03e-426b-8eaf-228e01f5e7f1",
+    "lastRemoteUuids": [
+      "0877131c-e03e-426b-8eaf-228e01f5e7f1"
+    ],
+    "lastThemeUuid": "03c6b25f-db63-402a-8447-a5ce1484c14d",
+    "applicationUUID": "22813e5e-88b1-42d5-9601-4831b2be369b",
+    "applicationName": "Ada32 Ethernet",
+    "lastProperties": [
+      {
+        "name": "DISPLAY_VARIABLE",
+        "latestValue": "gfx",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_TYPE",
+        "latestValue": "Adafruit_ST7735",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_WIDTH",
+        "latestValue": "160",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_HEIGHT",
+        "latestValue": "128",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_RESET_PIN",
+        "latestValue": "3",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_CS_PIN",
+        "latestValue": "6",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_RS_PIN",
+        "latestValue": "7",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_DATA_PIN",
+        "latestValue": "-1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_CLOCK_PIN",
+        "latestValue": "-1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "ST7735_TAB_TYPE",
+        "latestValue": "INITR_BLACKTAB",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_ROTATION",
+        "latestValue": "1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "UPDATES_PER_SEC",
+        "latestValue": "5",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "SW_POLLING_MODE",
+        "latestValue": "SWITCHES_POLL_KEYS_ONLY",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "SWITCH_IODEVICE",
+        "latestValue": "io8574",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_A",
+        "latestValue": "7",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_B",
+        "latestValue": "6",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_OK",
+        "latestValue": "5",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_BACK_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_NEXT_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "PULLUP_LOGIC",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_IS_QUARTER_CYCLE",
+        "latestValue": "false",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ETH_CONCURRENT_CONNECTIONS",
+        "latestValue": "1",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LIBRARY_TYPE",
+        "latestValue": "ETHERNET_2",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT1",
+        "latestValue": "3333",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT2",
+        "latestValue": "3334",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT3",
+        "latestValue": "3335",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ITEM_FONT",
+        "latestValue": "def:,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_FONT",
+        "latestValue": "ada:FreeSansBold9pt7b,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "BORDER_FOR_ACTIONS",
+        "latestValue": "0",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_SHOW_MODE",
+        "latestValue": "TITLE_ALWAYS",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "USE_SLIDER_ANALOG",
+        "latestValue": "true",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "NEED_EDITING_ICONS",
+        "latestValue": "true",
+        "subsystem": "THEME"
+      }
+    ],
+    "namingRecursive": false,
+    "saveToSrc": false,
+    "useCppMain": false,
+    "eepromDefinition": "at24:80:PAGESIZE_AT24C128",
+    "authenticatorDefinition": "rom:100:6",
+    "projectIoExpanders": [
+      "pcf8574:io8574:32:0",
+      "deviceIO:"
+    ],
+    "menuInMenuCollection": {
+      "menuDefinitions": []
+    },
+    "packageNamespace": ""
+  }
+}

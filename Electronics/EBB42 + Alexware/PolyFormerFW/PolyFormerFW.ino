@@ -1,11 +1,18 @@
+//Add dependencies from the 'packages' folder to your "default sketchbook folder" located at
+//Windows: C:\Users\{username}\Documents\Arduino
+//macOS: /Users/{username}/Documents/Arduino
+//Linux: /home/{username}/Arduino
+
+//Alternatively
 //Install the following libraries from the arduino Library manager
 //TCMenu 2.3.1
 //U8g2lib 2.33.15
 //TMCStepper 0.7.3
 //GyverNTC 1.2.0
 //PID 1.2.0
+//TMCStepper 0.7.3
 
-//Add STM32Duino
+//And add STM32Duino
 //https://github.com/stm32duino/wiki/wiki/Getting-Started
 //Use version 2.4.0 (If not available yet, use the main branch found here https://github.com/stm32duino/Arduino_Core_STM32), this adds support for the EBB42
 
@@ -23,7 +30,7 @@ const char pgmTuning[] PROGMEM = "Tuning PID";
 #define NOMINAL_TEMPERATURE    25
 #define B_VALUE                3950
 
-#define fwVersion              0.09
+#define fwVersion              1.00
 
 //System Variables
 int error = 0; //Start with a clean sheet and no error /* 0=no error; 1=Heater decoupled during rising; 2=Heater decoupled during hold; 10=Over Temp; 11=Thermistor short; 12=No thermistor */
@@ -42,12 +49,13 @@ double Setpoint;
 //#define meltzoneFanPin  PA6
 
 
-////EBB42 v1.1
+////EBB42 v1.1 & v1.2
 #define SDAPin          PB4
 #define SCLPin          PB3
 #define stepperEnPin    PD2
 #define thermistorPin   PA3
 #define heaterPin       PA2
+#define heaterPinAlt    PB13
 #define meltzoneFanPin  PA0
 #define encA            PB5
 #define encB            PB7

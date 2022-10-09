@@ -1,0 +1,16 @@
+{
+  "name": "Bounce2",
+  "keywords": "bounce, signal, input, ouput",
+  "description": "Debouncing library for Arduino or Wiring",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomasfredericks/Bounce2.git"
+  },
+  "version": "2.71",
+  "exclude": [
+    "*.png",
+    "*.zip"
+  ],
+  "frameworks": "arduino",
+  "platforms": "*"
+}

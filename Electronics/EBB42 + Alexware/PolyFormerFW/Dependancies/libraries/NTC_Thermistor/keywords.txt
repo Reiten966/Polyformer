@@ -1,0 +1,20 @@
+##########################################
+# Syntax Coloring Map For NTC_Thermistor #
+##########################################
+
+##########################################
+#         Data types (KEYWORD1)          #
+##########################################
+
+Thermistor	KEYWORD1
+NTC_Thermistor	KEYWORD1
+AverageThermistor	KEYWORD1
+SmoothThermistor	KEYWORD1
+
+##########################################
+#    Methods and Functions (KEYWORD2)    #
+##########################################
+
+readCelsius	KEYWORD2
+readKelvin	KEYWORD2
+readFahrenheit	KEYWORD2
