@@ -1,0 +1,21 @@
+{
+  "name": "TaskManagerIO",
+  "keywords": "tasks, task-manager, scheduler, event-driven, interrupts",
+  "description": "Simple efficient task management with interrupt marshalling. Provides the ability to schedule things to be done either at certain times or when events are triggered. Thread safe for RTOS use.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davetcc/TaskManagerIO"
+  },
+  "authors": [
+    {
+      "name": "DaveTcc",
+      "url": "https://www.thecoderscorner.com",
+      "maintainer": true
+    }
+  ],
+  "version": "1.3.3",
+  "license": "Apache-2.0",
+  "frameworks": "arduino, mbed",
+  "platforms": "*"
+}
+  

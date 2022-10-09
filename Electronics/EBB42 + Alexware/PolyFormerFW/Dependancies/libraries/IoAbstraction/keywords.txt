@@ -1,0 +1,98 @@
+#######################################
+# Syntax Coloring Map For Test
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+BasicIoAbstraction	KEYWORD1
+IoAbstractionRef	KEYWORD1
+MultiIoAbstraction	KEYWORD1
+TaskManager	KEYWORD1
+IoAbstractionRef	KEYWORD1
+SwitchInput	KEYWORD1
+EepromAbstraction	KEYWORD1
+I2cAt24Eeprom	KEYWORD1
+NoEeprom	KEYWORD1
+AvrEeprom	KEYWORD1
+Executable	KEYWORD1
+AnalogDevice	KEYWORD1
+ArduinoAnalogDevice	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+ioDevicePinMode	KEYWORD2
+ioDeviceDigitalReadPort	KEYWORD2
+ioDeviceDigitalReadPortS	KEYWORD2
+ioDeviceDigitalWritePort	KEYWORD2
+ioDeviceDigitalWritePort	KEYWORD2
+ioDeviceDigitalRead	KEYWORD2
+ioDeviceDigitalWrite	KEYWORD2
+ioDeviceDigitalReadS	KEYWORD2
+ioDeviceDigitalWriteS	KEYWORD2
+ioDeviceAttachInterrupt	KEYWORD2
+ioDeviceSync	KEYWORD2
+ioUsingArduino	KEYWORD2
+ioFrom8574	KEYWORD2
+ioFrom23017	KEYWORD2
+inputOutputFromShiftRegister	KEYWORD2
+inputOnlyFromShiftRegister	KEYWORD2
+outputOnlyFromShiftRegister	KEYWORD2
+addSwitch	KEYWORD2
+initialise	KEYWORD2
+initialiseEncoder	KEYWORD2
+changeEncoderPrecision	KEYWORD2
+encoderChanged	KEYWORD2
+scheduleOnce	KEYWORD2
+scheduleFixedRate	KEYWORD2
+addInterrupt	KEYWORD2
+setInterruptCallback	KEYWORD2
+cancelTask	KEYWORD2
+runLoop	KEYWORD2
+readPort	KEYWORD2
+writePort	KEYWORD2
+onRelease	KEYWORD2
+inputFromDfRobotShield	KEYWORD2
+inputFromDfRobotShieldV1	KEYWORD2
+getMaximumRange	KEYWORD2
+initPin	KEYWORD2
+getCurrentValue	KEYWORD2
+setCurrentValue	KEYWORD2
+serdebug	KEYWORD2
+serdebug2	KEYWORD2
+serdebugHex	KEYWORD2
+serdebugF	KEYWORD2
+serdebugF2	KEYWORD2
+serdebugF3	KEYWORD2
+serdebugFHex	KEYWORD2
+serdebugFHex2	KEYWORD2
+serdebugHexDump KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+taskManager
+switches
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+TIME_MICROS	LITERAL1
+TIME_MILLIS	LITERAL1
+TIME_SECONDS	LITERAL1
+NO_REPEAT	LITERAL1
+PAGESIZE_AT24C32	LITERAL1
+PAGESIZE_AT24C64	LITERAL1
+PAGESIZE_AT24C128	LITERAL1
+PAGESIZE_AT24C256	LITERAL1
+PAGESIZE_AT24C512	LITERAL1
+DF_KEY_DOWN	LITERAL1
+DF_KEY_UP	LITERAL1
+DF_KEY_LEFT	LITERAL1
+DF_KEY_RIGHT	LITERAL1
+DF_KEY_SELECT	LITERAL1
+DIR_IN	LITERAL1
+DIR_OUT	LITERAL1
+
