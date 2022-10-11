@@ -1,0 +1,473 @@
+{
+  "version": "1.00",
+  "projectName": "/Users/dave/Documents/Arduino/tcLibraryDev/lib/tcMenu/examples/takeOverDisplay/takeOverDisplay.emf",
+  "author": "dave",
+  "items": [
+    {
+      "parentId": 0,
+      "type": "textItem",
+      "item": {
+        "textLength": 10,
+        "itemType": "TIME_12H",
+        "name": "Time",
+        "id": 13,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "actionMenu",
+      "item": {
+        "name": "Take Display",
+        "id": 1,
+        "eepromAddress": -1,
+        "functionName": "onTakeOverDisplay",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "enumItem",
+      "item": {
+        "enumEntries": [
+          "Pizza",
+          "Pasta",
+          "Salad"
+        ],
+        "name": "Food",
+        "id": 2,
+        "eepromAddress": 3,
+        "functionName": "onFoodChoice",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "textItem",
+      "item": {
+        "textLength": 10,
+        "itemType": "PLAIN_TEXT",
+        "name": "Text",
+        "id": 7,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "actionMenu",
+      "item": {
+        "name": "Info Dialog",
+        "id": 8,
+        "eepromAddress": -1,
+        "functionName": "onInfoDlg",
+        "readOnly": false,
+        "localOnly": true,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "actionMenu",
+      "item": {
+        "name": "Question Dialog",
+        "id": 9,
+        "eepromAddress": -1,
+        "functionName": "onQuestionDlg",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Settings",
+        "id": 3,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "boolItem",
+      "item": {
+        "naming": "TRUE_FALSE",
+        "name": "Enabled",
+        "id": 4,
+        "eepromAddress": 2,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 250,
+        "offset": 0,
+        "divisor": 10,
+        "unitName": "W",
+        "step": 1,
+        "name": "Power",
+        "id": 5,
+        "eepromAddress": 5,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "actionMenu",
+      "item": {
+        "name": "Save Settings",
+        "id": 6,
+        "eepromAddress": -1,
+        "functionName": "onSaveSettings",
+        "readOnly": false,
+        "localOnly": true,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "largeNumItem",
+      "item": {
+        "digitsAllowed": 9,
+        "decimalPlaces": 0,
+        "negativeAllowed": false,
+        "name": "PositiveInts",
+        "id": 15,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "largeNumItem",
+      "item": {
+        "digitsAllowed": 10,
+        "decimalPlaces": 4,
+        "negativeAllowed": true,
+        "name": "Num6x4",
+        "id": 16,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "textItem",
+      "item": {
+        "textLength": 10,
+        "itemType": "TIME_12H",
+        "name": "Time",
+        "id": 17,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "textItem",
+      "item": {
+        "textLength": 10,
+        "itemType": "GREGORIAN_DATE",
+        "name": "Date",
+        "id": 18,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": true,
+        "name": "Connectivity",
+        "id": 11,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": true,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "textItem",
+      "item": {
+        "textLength": 15,
+        "itemType": "PLAIN_TEXT",
+        "name": "ChangePin",
+        "id": 14,
+        "eepromAddress": -1,
+        "functionName": "onChangePin",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "textItem",
+      "item": {
+        "textLength": 20,
+        "itemType": "IP_ADDRESS",
+        "name": "IPAddress",
+        "id": 12,
+        "eepromAddress": 7,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "customBuildItem",
+      "item": {
+        "menuType": "REMOTE_IOT_MONITOR",
+        "name": "IoT Monitor",
+        "id": 19,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "customBuildItem",
+      "item": {
+        "menuType": "AUTHENTICATION",
+        "name": "Authenticator",
+        "id": 20,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    }
+  ],
+  "codeOptions": {
+    "embeddedPlatform": "ARDUINO",
+    "lastDisplayUuid": "61f370f4-0294-41cf-8988-1458f242914a",
+    "lastInputUuid": "6dd87e7d-e751-4912-a70d-91793b1d3d87",
+    "lastRemoteUuid": "0877131c-e03e-426b-8eaf-228e01f5e7f1",
+    "lastRemoteUuids": [
+      "0877131c-e03e-426b-8eaf-228e01f5e7f1",
+      "1e38dc42-672d-4c1c-a393-2c7632bf6c5c"
+    ],
+    "lastThemeUuid": "850dc0a3-f534-47c2-94d8-1e64ff368a54",
+    "applicationUUID": "40722ec4-e8bc-4889-b54e-d81b14cb429c",
+    "applicationName": "Take Over Display",
+    "lastProperties": [
+      {
+        "name": "LCD_WIDTH",
+        "latestValue": "20",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_HEIGHT",
+        "latestValue": "4",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_EN",
+        "latestValue": "9",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_RS",
+        "latestValue": "8",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_D4",
+        "latestValue": "10",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_D5",
+        "latestValue": "11",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_D6",
+        "latestValue": "12",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_D7",
+        "latestValue": "13",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_BACKLIGHT",
+        "latestValue": "-1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_PWM_PIN",
+        "latestValue": "-1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "LCD_IO_DEVICE",
+        "latestValue": "io23017",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "UNO_OR_FULL",
+        "latestValue": "fullLcd",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "UPDATES_PER_SEC",
+        "latestValue": "5",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "SW_POLLING_MODE",
+        "latestValue": "SWITCHES_POLL_EVERYTHING",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "SWITCH_IODEVICE",
+        "latestValue": "io23017",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_A",
+        "latestValue": "6",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_B",
+        "latestValue": "7",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_OK",
+        "latestValue": "5",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_BACK_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_NEXT_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "PULLUP_LOGIC",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_IS_QUARTER_CYCLE",
+        "latestValue": "false",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ETH_CONCURRENT_CONNECTIONS",
+        "latestValue": "1",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LIBRARY_TYPE",
+        "latestValue": "ETHERNET_2",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT1",
+        "latestValue": "3333",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT2",
+        "latestValue": "3334",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT3",
+        "latestValue": "3335",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "SERIAL_PORT",
+        "latestValue": "Serial",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ITEM_FONT",
+        "latestValue": "def:,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_FONT",
+        "latestValue": "def:,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "BORDER_FOR_ACTIONS",
+        "latestValue": "0",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_SHOW_MODE",
+        "latestValue": "TITLE_FIRST_ROW",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "USE_SLIDER_ANALOG",
+        "latestValue": "true",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "NEED_EDITING_ICONS",
+        "latestValue": "false",
+        "subsystem": "THEME"
+      }
+    ],
+    "namingRecursive": true,
+    "saveToSrc": false,
+    "useCppMain": false,
+    "eepromDefinition": "at24:80:PAGESIZE_AT24C16",
+    "authenticatorDefinition": "rom:100:6",
+    "projectIoExpanders": [
+      "customIO:io23017",
+      "deviceIO:"
+    ],
+    "menuInMenuCollection": {
+      "menuDefinitions": []
+    },
+    "packageNamespace": "",
+    "appIsModular": false
+  }
+}

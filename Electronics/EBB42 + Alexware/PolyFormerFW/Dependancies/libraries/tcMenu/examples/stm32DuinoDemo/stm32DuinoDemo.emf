@@ -1,0 +1,428 @@
+{
+  "version": "1.00",
+  "projectName": "Project description",
+  "author": "dave",
+  "items": [
+    {
+      "parentId": 0,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 1000,
+        "offset": 0,
+        "divisor": 10,
+        "unitName": "d",
+        "step": 1,
+        "name": "Decimal",
+        "variableName": "Decimal",
+        "id": 1,
+        "eepromAddress": 2,
+        "functionName": "decimalDidChange",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 255,
+        "offset": 0,
+        "divisor": 2,
+        "unitName": "dB",
+        "step": 1,
+        "name": "Halves",
+        "variableName": "Halves",
+        "id": 2,
+        "eepromAddress": 4,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "largeNumItem",
+      "item": {
+        "digitsAllowed": 9,
+        "decimalPlaces": 3,
+        "negativeAllowed": true,
+        "name": "Lge Num",
+        "variableName": "LgeNum",
+        "id": 3,
+        "eepromAddress": 6,
+        "functionName": "largeNumDidChange",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "More Items",
+        "variableName": "MoreItems",
+        "id": 4,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "enumItem",
+      "item": {
+        "enumEntries": [
+          "Pizza",
+          "Pasta",
+          "Salad"
+        ],
+        "name": "Options",
+        "variableName": "MoreItemsOptions",
+        "id": 5,
+        "eepromAddress": 14,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "boolItem",
+      "item": {
+        "naming": "YES_NO",
+        "name": "Toppings",
+        "variableName": "MoreItemsToppings",
+        "id": 6,
+        "eepromAddress": 16,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "boolItem",
+      "item": {
+        "naming": "ON_OFF",
+        "name": "Power",
+        "variableName": "MoreItemsPower",
+        "id": 7,
+        "eepromAddress": 17,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "actionMenu",
+      "item": {
+        "name": "Save",
+        "variableName": "MoreItemsPressMe",
+        "id": 8,
+        "eepromAddress": -1,
+        "functionName": "saveWasPressed",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "floatItem",
+      "item": {
+        "numDecimalPlaces": 2,
+        "name": "Number",
+        "variableName": "MoreItemsNumber",
+        "id": 9,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 4,
+      "type": "scrollItem",
+      "item": {
+        "itemWidth": 10,
+        "eepromOffset": 0,
+        "numEntries": 5,
+        "choiceMode": "ARRAY_IN_RAM",
+        "variable": "ramDataSet",
+        "name": "Scroll",
+        "variableName": "MoreItemsScroll",
+        "id": 10,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Runtimes",
+        "variableName": "Runtimes",
+        "id": 11,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "textItem",
+      "item": {
+        "textLength": 5,
+        "itemType": "PLAIN_TEXT",
+        "name": "Text",
+        "variableName": "RuntimesText",
+        "id": 12,
+        "eepromAddress": 18,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "runtimeList",
+      "item": {
+        "initialRows": 0,
+        "name": "Custom List",
+        "variableName": "RuntimesCustomList",
+        "id": 13,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "customBuildItem",
+      "item": {
+        "menuType": "REMOTE_IOT_MONITOR",
+        "name": "IoT Monitor",
+        "id": 14,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 11,
+      "type": "customBuildItem",
+      "item": {
+        "menuType": "AUTHENTICATION",
+        "name": "Authenticator",
+        "id": 15,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "enumItem",
+      "item": {
+        "enumEntries": [
+          "1x",
+          "2x",
+          "4x"
+        ],
+        "name": "Decimal Step",
+        "variableName": "DecimalStep",
+        "id": 16,
+        "eepromAddress": 23,
+        "functionName": "onDecimalStepChange",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    }
+  ],
+  "codeOptions": {
+    "embeddedPlatform": "STM32DUINO",
+    "lastDisplayUuid": "fd998437-c4b2-4386-ba88-d0ae7c20620b",
+    "lastInputUuid": "6dd87e7d-e751-4912-a70d-91793b1d3d87",
+    "lastRemoteUuid": "0877131c-e03e-426b-8eaf-228e01f5e7f1",
+    "lastRemoteUuids": [
+      "0877131c-e03e-426b-8eaf-228e01f5e7f1"
+    ],
+    "lastThemeUuid": "0dd60ceb-7e0f-46e2-8d40-b264eb3aa7e0",
+    "applicationUUID": "ecd5607f-55eb-4252-a512-aab769452dd3",
+    "applicationName": "stm32DuinoDemo",
+    "lastProperties": [
+      {
+        "name": "DISPLAY_VARIABLE",
+        "latestValue": "gfx",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_TYPE",
+        "latestValue": "U8G2_SSD1306_128X64_NONAME_F_4W_HW_SPI",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_ROTATION",
+        "latestValue": "U8G2_R0",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_CLOCK_PIN",
+        "latestValue": "U8X8_PIN_NONE",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_DATA_PIN",
+        "latestValue": "U8X8_PIN_NONE",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_RESET_PIN",
+        "latestValue": "PF12",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_CS_PIN",
+        "latestValue": "PF13",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_RS_PIN",
+        "latestValue": "PD15",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "UPDATES_PER_SEC",
+        "latestValue": "5",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "YIELDING_WIRE_CB",
+        "latestValue": "false",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "SW_POLLING_MODE",
+        "latestValue": "SWITCHES_POLL_EVERYTHING",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "SWITCH_IODEVICE",
+        "latestValue": "devicePins",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_A",
+        "latestValue": "PC8",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_B",
+        "latestValue": "PC10",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_OK",
+        "latestValue": "PC9",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_BACK_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_NEXT_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "PULLUP_LOGIC",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_IS_QUARTER_CYCLE",
+        "latestValue": "false",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ETH_CONCURRENT_CONNECTIONS",
+        "latestValue": "1",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LIBRARY_TYPE",
+        "latestValue": "STM32ETHERNET",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT1",
+        "latestValue": "3333",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT2",
+        "latestValue": "3334",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ETH_LISTEN_PORT3",
+        "latestValue": "3335",
+        "subsystem": "REMOTE"
+      },
+      {
+        "name": "ITEM_FONT",
+        "latestValue": "def:,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_FONT",
+        "latestValue": "avl:u8g2_font_prospero_bold_nbp_tr,1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_HEADER_PADDING",
+        "latestValue": "1",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_TO_ITEM_SPACING",
+        "latestValue": "0",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_SHOW_MODE",
+        "latestValue": "TITLE_ALWAYS",
+        "subsystem": "THEME"
+      }
+    ],
+    "namingRecursive": true,
+    "saveToSrc": false,
+    "useCppMain": false,
+    "eepromDefinition": "bsp:0",
+    "authenticatorDefinition": "rom:150:4",
+    "projectIoExpanders": [
+      "deviceIO:"
+    ],
+    "menuInMenuCollection": {
+      "menuDefinitions": []
+    },
+    "packageNamespace": "",
+    "appIsModular": false
+  }
+}
