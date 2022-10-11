@@ -1,6 +1,6 @@
-##PolyPlank##
+## PolyPlank
 
-###A minimumal version of Polyformer that can be eventually upgraded###
+### A minimumal version of Polyformer that can be eventually upgraded
 
 As of Q4 2022 to make a polyplank ( does not include electronics)
 
