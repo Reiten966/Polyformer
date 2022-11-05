@@ -1,3 +1,0 @@
-This example includes a compiled version of roboto mono font from google fonts.
-License file:
-https://fonts.google.com/specimen/Roboto+Mono#license
