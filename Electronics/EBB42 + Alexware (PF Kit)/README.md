@@ -1,6 +1,10 @@
 # Firmware for the PolyFormer stand alone pulling system
 ---
 
+## Wiring Diagram
+![Wiring_Diagram_EBB42](https://user-images.githubusercontent.com/55605342/200231448-e15c6e57-087e-4646-a03f-d1361c8c26a7.png)
+
+
 
 ## References
 
