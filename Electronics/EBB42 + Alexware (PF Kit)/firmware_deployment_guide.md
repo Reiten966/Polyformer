@@ -35,7 +35,7 @@ Now make your EBB42 enter DFU Mode:
 1. Hold down BOTH buttons
 2. Release only the RST button, while holding down the BOOT button.
 3. Wait for 1 second
-4. Release the SETUP button
+4. Release the BOOT button
 
 #### Update System Firmware
 
