@@ -2,7 +2,7 @@
 
 - Material Usage as of (9/21/2022): 2000g Main color and 500g accent color (1.25g/mm3 density). (We are constantly working on reducing the usage)
 
-- Before you print anything, please print the **PolyCube** under the Tools folder and post your result in #print_help. The cube is a test for evaluating printer's performance and accuracy, we will help you intepret the result and suggest ways you can improve the quality.
+- Before you print anything, please print the [**PolyCube**](https://github.com/Reiten966/Polyformer/blob/main/STL/PolyTools/PolyCube.STL) under the Tools folder and post your result in #print_help. The cube is a test for evaluating printer's performance and accuracy, we will help you intepret the result and suggest ways you can improve the quality.
 
 - It is recommended to use Superslicer or Cura which has individual control for overhangs, thus Prusaslicer is not recommended. You can also slow down the perimeter speed and increase fan speed if your slicer doesn't support lowering overhang speed.
 
