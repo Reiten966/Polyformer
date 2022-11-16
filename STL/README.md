@@ -15,5 +15,5 @@
 
 - In regards to the temperature for heatset inserts, PLA is around 225 °C, PETG is 245 °C, and ABS is 265 °C.
 
-- All the functional parts can be printed on a 200mm x 200m build plate. The panels can be printed on a 220mm x 200mm plate.
+- All the functional parts can be printed on a 155mm x 155mm build plate. The panels can be printed on a 220mm x 200mm plate.
 
