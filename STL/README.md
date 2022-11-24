@@ -4,6 +4,8 @@
 
 - Before you print anything, please print the [**PolyCube**](https://github.com/Reiten966/Polyformer/blob/main/STL/PolyTools/PolyCube.STL) under the Tools folder and post your result in #print_help. The cube is a test for evaluating printer's performance and accuracy, we will help you intepret the result and suggest ways you can improve the quality.
 
+- Use [**PolyTray**](https://github.com/Reiten966/Polyformer/blob/main/STL/PolyTools/PolyTray.STL) to organize your bolts and screws while building the Polyformer.
+
 - It is recommended to use Superslicer or Cura which has individual control for overhangs, thus Prusaslicer is not recommended. You can also slow down the perimeter speed and increase fan speed if your slicer doesn't support lowering overhang speed.
 
 - Always dry your filament before printing mechanical parts, especially PETG. The blobs and strings cause by wet filaments can cause binding and malfunctioning the gearbox.
