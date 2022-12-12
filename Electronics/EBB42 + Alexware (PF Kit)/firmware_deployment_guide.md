@@ -9,6 +9,7 @@ The EBB42 has no firmware installed by default when shipped out. You can manage 
 
 * [Using Arduino IDE](#using-arduino-ide): You can update system firmware and  user application. If you have a ST-LINK in hand, you can even update the bootloader.
 
+* [Using STM32Programmer](https://youtu.be/_FELCN8CbWA?t=385): STM32Programmer may be easier if you prefer a graphical interface. This video by Eddie shows you how to install any firmware on EBB42, you just need to load the PolyFormerFW_Vx.x.bin file instead.
 
 ## <span id="using-dfu-util">Using dfu-util</span>
 
