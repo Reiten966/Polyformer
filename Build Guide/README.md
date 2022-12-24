@@ -27,7 +27,7 @@ Make sure you run Polyformer in a well ventilated area.
 
 70-80C Bed Temp
 
-120-130% flow (needs to be calibrated)
+120-130% flow (higher due to the hollow bore nature of the filament, needs to be calibrated)
 
 20-40% fan
 
