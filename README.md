@@ -3,7 +3,7 @@
 
 Polyformer is an open-source project that aims to recycle plastics into FDM filaments
 
-Join the [Discord](https://github.com/sponsors/Reiten966/sponsorships?sponsor=Reiten966&tier_id=199363&preview=false) by signing up $1 Github sponsorship or $1 Patreon, Link is on the right
+Join the [Discord](https://discord.gg/jUtHzhddZZ) for Q&A. Please consider signing up for Patreon or Github sponsorship, link is on the right.
 
 The part kit is available at [DFH](https://dfh.fm/collections/new-products/products/polyformer-kit-by-reiten966) and [Triangle Lab](https://s.click.aliexpress.com/e/_DFp1dtz), shipping internationally. 
 
