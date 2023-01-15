@@ -4,6 +4,8 @@
 
 * The SSD version is for oled screens with SSD1309 chip
 
+
+
 if you are not sure, just use the SH version.
 
 if you experience any screen artifacts, please flash the other version.
