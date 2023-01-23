@@ -5,7 +5,7 @@ Polyformer is an open-source project that aims to recycle plastics into FDM fila
 
 Join the [Discord](https://discord.gg/jUtHzhddZZ) for Q&A. Please consider signing up for Patreon or Github sponsorship, link is on the right.
 
-The part kit is available at [DFH-US](https://dfh.fm/collections/new-products/products/polyformer-kit-by-reiten966) and [Triangle Lab-Global](https://s.click.aliexpress.com/e/_DFp1dtz), shipping internationally. 
+The part kit is available at [DFH-US](https://dfh.fm/collections/new-products/products/polyformer-kit-by-reiten966) and [Triangle Lab-Global](https://s.click.aliexpress.com/e/_DFp1dtz). 
 
 Make sure your printer can print over 260C and is not PTFE lined.
 
