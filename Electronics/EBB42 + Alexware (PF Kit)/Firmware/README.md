@@ -2,7 +2,7 @@
 
 * The SH version is for oled screens with SH1106 chip
 
-* The SSD version is for oled screens with SSD1309 chip
+* The SSD version is for oled screens with SSD1306 chip
 
 
 
