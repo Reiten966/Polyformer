@@ -1,6 +1,6 @@
 # Print Guide
 
-- The parts are DESIGNED to be manufactured with FDM technology with a proper tolerance stack
+- The parts are DESIGNED to be manufactured with FDM technology with the proper tolerance stack in mind.
 
 - Material Usage as of (9/21/2022): 1255g (2000g with panels) Main color and 400g accent color (1.25g/mm3 density). (We are constantly working on reducing the usage)
 
