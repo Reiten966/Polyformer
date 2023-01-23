@@ -20,4 +20,4 @@ Working on this project will expose you to HIGH VOLTAGE COMPONENTS and moderate 
 
 [Project Page](http://www.reiten.design/polyformer)
 
-[OSHWA Certification](https://certification.oshwa.org/us002136.html)
+[OSHWA US002136](https://certification.oshwa.org/us002136.html)
