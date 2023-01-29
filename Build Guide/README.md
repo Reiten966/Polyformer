@@ -12,7 +12,7 @@
 [Heatset inserts tutorial](https://youtu.be/gEWWZhYNxxQ)
 
 
-[PolyCutter Lite assembly video](https://www.youtube.com/watch?v=EgzWEFJ99so)
+[Polycutter Lite assembly video](https://www.youtube.com/watch?v=EgzWEFJ99so)
 
 
 [Polyformer operation video](https://www.youtube.com/watch?v=f05WWMm3e6w&t=1s)
