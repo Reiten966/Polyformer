@@ -2,7 +2,7 @@
 ---
 
 ## Wiring Diagram
-![Wiring_Diagram_EBB42](https://user-images.githubusercontent.com/55605342/218549553-6991dbef-d0c9-42f8-9f03-8aaaa7aa4ced.png)
+![Wiring_Diagram_EBB42](https://user-images.githubusercontent.com/55605342/218550967-83955333-27ae-42a4-810d-ca063b48d652.png)
 
 * [Wiring Guide In-Progress](https://discord.com/channels/969539629176991764/1062541608559579187)
 
