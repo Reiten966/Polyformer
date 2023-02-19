@@ -1,7 +1,7 @@
 # EBB42: Firmware Deployment Guide
 ---
 
-The EBB42 has no firmware installed by default when shipped out. You can manage the firmware using dfu-util, Arduino IDE and STM32CubeProgrammer.<!-- , Particle CLI, Particle Cloud, Ymodem and OpenOCD. -->
+The firmware files are located [here](https://github.com/Reiten966/Polyformer/tree/main/Electronics/EBB42%20%2B%20Alexware%20(PF%20Kit)/Firmware),the EBB42 has no firmware installed by default when shipped out. You can manage the firmware using dfu-util, Arduino IDE and STM32CubeProgrammer.<!-- , Particle CLI, Particle Cloud, Ymodem and OpenOCD. -->
 
 
 * [Using STM32Programmer](https://youtu.be/_FELCN8CbWA?t=385): STM32Programmer may be easier if you prefer a graphical interface. This video(watch 6:24-8:06) by Eddie shows you how to install any firmware on EBB42, you just need to load the PolyFormerFW_Vx.x.bin file instead.
