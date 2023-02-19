@@ -20,6 +20,8 @@ Items that are tested:
 
 Post your result in #print_help
 
+![How to read Polycube](https://user-images.githubusercontent.com/55605342/219974237-9e07b34f-a2ad-4c0e-81c2-d714c23fc2a0.png)
+
 ## PolyPlane
 
 Used for sharpening bearings, achieving a better cutting performance
