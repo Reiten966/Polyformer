@@ -3,7 +3,6 @@
 
 The EBB42 has no firmware installed by default when shipped out. You can manage the firmware using dfu-util, Arduino IDE and STM32CubeProgrammer.<!-- , Particle CLI, Particle Cloud, Ymodem and OpenOCD. -->
 
-**More instructions to update the EBB42 using dfu-util, please refer to the [Firmware Deployment Guide](#using-dfu-util).**
 
 * [Using STM32Programmer](https://youtu.be/_FELCN8CbWA?t=385): STM32Programmer may be easier if you prefer a graphical interface. This video by Eddie shows you how to install any firmware on EBB42, you just need to load the PolyFormerFW_Vx.x.bin file instead.
 
