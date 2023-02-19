@@ -5,11 +5,6 @@
 ![Wiring_Diagram_EBB42](https://user-images.githubusercontent.com/55605342/218550967-83955333-27ae-42a4-810d-ca063b48d652.png)
 
 * [Wiring Guide In-Progress](https://discord.com/channels/969539629176991764/1062541608559579187)
-
-
-
-## References
-
 * [Firmware deployment guide](firmware_deployment_guide.md)
 
 
