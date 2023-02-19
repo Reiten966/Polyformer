@@ -4,7 +4,7 @@
 
 - Material Usage as of (9/21/2022): 1255g (2000g with panels) Main color and 400g accent color (1.25g/mm3 density). (We are constantly working on reducing the usage)
 
-- Before you print anything, please print the [**PolyCube**](https://github.com/Reiten966/Polyformer/blob/main/STL/PolyTools/PolyCube.STL) under the Tools folder and post your result in #print_help. The cube is a test for evaluating printer's performance and accuracy, we will help you intepret the result and suggest ways you can improve the quality.
+- Before you print anything, please print the [**PolyCube**](https://github.com/Reiten966/Polyformer/blob/main/STL/PolyTools) under the Tools folder and post your result in #print_help. The cube is a test for evaluating printer's performance and accuracy, we will help you intepret the result and suggest ways you can improve the quality.
 
 - Use [**PolyTray**](https://github.com/Reiten966/Polyformer/blob/main/STL/PolyTools/PolyTray.STL) to organize your bolts and screws while building the Polyformer.
 
