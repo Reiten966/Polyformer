@@ -1,6 +1,6 @@
 # EBB42: Firmware Deployment Guide
 ---
-
+## Preparing the board for firmware installation (Entering DFU mode)
 The firmware files are located [here](https://github.com/Reiten966/Polyformer/tree/main/Electronics/EBB42%20%2B%20Alexware%20(PF%20Kit)/Firmware), the EBB42 has no firmware installed by default when shipped out. You can upload the firmware using STM32CubeProgrammer or dfu-util.
 
 * Enable USB Power
@@ -19,6 +19,8 @@ In MacOS X. Visit the AppleMenu->About This Mac->System Report. Select USB and l
 ![Alt text](images/LinuxHardInfo.png)
 In Linux, use HardInfo `sudo apt install hardinfo`
 
+## Installing the firmware
+---
 * [Using STM32CubeProg](STM32CubeProg_guide.md): The easiest way by far to program, is to download STM32CubeProg. It's a graphical programmer and does not require Zadig or special command line invocation.
 
     The only downside is you'll need to make an ST.com account. 
