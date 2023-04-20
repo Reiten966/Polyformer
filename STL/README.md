@@ -8,11 +8,11 @@
 
 - Use [**PolyTray**](https://github.com/Reiten966/Polyformer/blob/main/STL/PolyTools/PolyTray.STL) to organize your bolts and screws while building the Polyformer.
 
-- It is recommended to use Superslicer or Cura which has individual control for overhangs, thus Prusaslicer is not recommended. You can also slow down the perimeter speed and increase fan speed if your slicer doesn't support lowering overhang speed.
-
 - Always dry your filament before printing mechanical parts, especially PETG. The blobs and strings cause by wet filaments can cause binding and malfunctioning the gearbox.
 
 - The parts should be printed with at least **4 perimeters, 6 top and bottom layers**, set the seam type to "aligned" in Superslicer, or set to "sharpest corner" and "smart hiding" in Cura, **20% infill and 0.2mm layer height**. Cubic or gyro infill are usually pretty good. If you are using clear filament, Grid and honeycomb infill looks the nicest. You can also do concentric fill for your top and bottom layers which will look very nice.
+
+- If you run into fitment issues and your printer has already been calibrated, try changing the "horizontal expansion" to -0.05 and increase if needed.
 
 - Please also adjust the expansion rate in the slicer, you can do so by scaling the model only in XY direction by percentage, ABS has about ~0.6% shrinkage, PETG has about ~0.15%, I am not too sure about PLA (it has a lesser tendency to shrink than PETG so probably negligible) but you can do a test by printing a long bar across the plate and measure the dimension to calculate the shrinkage.
 

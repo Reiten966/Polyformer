@@ -1,14 +1,33 @@
 # EBB42: Firmware Deployment Guide
 ---
+## Preparing the board for firmware installation (Entering DFU mode)
+The firmware files are located [here](https://github.com/Reiten966/Polyformer/tree/main/Electronics/EBB42%20%2B%20Alexware%20(PF%20Kit)/Firmware), the EBB42 has no firmware installed by default when shipped out. You can upload the firmware using STM32CubeProgrammer or dfu-util.
 
-The firmware files are located [here](https://github.com/Reiten966/Polyformer/tree/main/Electronics/EBB42%20%2B%20Alexware%20(PF%20Kit)/Firmware), the EBB42 has no firmware installed by default when shipped out. You can manage the firmware using dfu-util, Arduino IDE and STM32CubeProgrammer.<!-- , Particle CLI, Particle Cloud, Ymodem and OpenOCD. -->
+* Enable USB Power
+    
+    When connected via USB, the green LED should light up. If it doesnt light up, you need attach the jumper across VUSB.![Alt text](images/VUSB.jpg)
 
+* Enabling DFU bootloader mode 
 
-* [Using STM32Programmer](https://youtu.be/_FELCN8CbWA?t=385): STM32Programmer may be easier if you prefer a graphical interface. This video(watch 6:24-8:06) by Eddie shows you how to install any firmware on EBB42, you just need to load the PolyFormerFW_Vx.x.bin file instead.
+    Enabling the DFU bootloader is super easy. Simply hold down the BOOT button. Then press the RST button or power cycle while the board is connected to your computer USB port. The led will glow dull blue if you have done this correclty. If you get no LED's iluminated, make sure the jumper is conected across 'VBUS'![Alt text](images/Boot.jpg) After you've hit reset, you can release the BOOT button - it's only checked on powerup
 
-* [Using dfu-util](#dfu-util_installation_guide.md): You can update all of the internal flash memory, system firmware and any other binary files if you need, except the bootloader itself.
+* Check for USB Bootloader device
+![Alt text](images/DeviceManager.png)
+In Windows, in "Device Manager", you will see the device show up as "STM32 BOOTLOADER" under Universal Serial Bus devices
+![Alt text](images/feather_boards_screenshot_11.png)
+In MacOS X. Visit the AppleMenu->About This Mac->System Report. Select USB and look for the item labeled "STM32 BOOTLOADER"
+![Alt text](images/LinuxHardInfo.png)
+In Linux, use HardInfo `sudo apt install hardinfo`
 
-* [Using Arduino IDE](#using-arduino-ide): You can update system firmware and  user application. If you have a ST-LINK in hand, you can even update the bootloader.
+## Installing the firmware
+---
+* [Using STM32CubeProg](STM32CubeProg_guide.md): The easiest way by far to program, is to download STM32CubeProg. It's a graphical programmer and does not require Zadig or special command line invocation.
+
+    The only downside is you'll need to make an ST.com account. 
+    
+    This [video](https://youtu.be/_FELCN8CbWA?t=385) (watch 6:24-8:06) by Eddie shows you how to install any firmware on EBB42, you just need to load the PolyFormerFW_Vx.x.bin file instead.
+
+* [Using dfu-util](dfu-util_guide.md): Command line tool for programming.
 
 
 
@@ -16,12 +35,14 @@ The firmware files are located [here](https://github.com/Reiten966/Polyformer/tr
 
 ## References
 
-* [EBB42 Introduction](EBB42_introduction.md)
-* [Firmware Architecture Overview](firmware_architecture_overview.md)
-* [System Firmware Change-log](system_firmware_changelog.md)
-* [dfu-util Installation Guide](dfu-util_installation_guide.md)
-* [Windows Driver Installation Guide](windows_driver_installation_guide.md)
+<!-- * [EBB42 Introduction](EBB42_introduction.md) -->
+<!-- * [Firmware Architecture Overview](firmware_architecture_overview.md) -->
+<!-- * [System Firmware Change-log](system_firmware_changelog.md) -->
+<!-- * [Windows Driver Installation Guide](windows_driver_installation_guide.md) -->
+* [STM32CubeProg Installation Guide](STM32CubeProg_guide.md)
+* [dfu-util Installation Guide](dfu-util_guide.md)
 * [Polyformer Disord](https://discord.gg/JUNUWZkG)
+* [Adafruit](https://learn.adafruit.com/adafruit-stm32f405-feather-express/dfu-bootloader-details)
 
 
 ## Resources
