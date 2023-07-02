@@ -3,11 +3,11 @@
 
 # Windows | Mac | Linux
 
-The easiest way by far to program the board is to download STM32CubeProg. It's a graphical programmer, does not require Zadig or special command line invocation. Download the earliest version available from their website after 2.1.0 (e.g. 2.5.0 is fine), otherwise the write process will not complete successfully.
+The easiest way by far to program the board is to download STM32CubeProg. It's a graphical programmer, and does not require Zadig or special command line invocation. Download the earliest version available from their website after 2.1.0 (e.g. 2.5.0 is fine), otherwise, the writing process will not complete successfully.
 
-You'll need to make an ST.com account is the only downside.
+You'll need to make a ST.com account is the only downside.
 
-[Download STM32CubeProg](https://www.st.com/en/development-tools/stm32cubeprog.html)
+[Download STM32CubeProg(please download 2.50 version)](https://www.st.com/en/development-tools/stm32cubeprog.html)
 
 ![Alt text](images/STM32CubeProg1.png)
 When you start it up, it'll look like this.
