@@ -2,13 +2,19 @@
 ---
 
 ## Wiring Diagram
+### EBB42
 ![Wiring_Diagram_EBB42](https://user-images.githubusercontent.com/55605342/218550967-83955333-27ae-42a4-810d-ca063b48d652.png)
+
+
+### EBB36
+![Wiring_Diagram_EBB36](https://github.com/Reiten966/Polyformer/assets/55605342/73213b67-08fd-4fc9-8957-347b7a935d80)
 
 * [Wiring Guide In-Progress](https://discord.com/channels/969539629176991764/1062541608559579187)
 * [Firmware deployment guide](firmware_deployment_guide.md)
 
 
-## License
+
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
