@@ -5,6 +5,9 @@ Polyformer is an open-source project that aims to recycle plastics into FDM fila
 
 Join the [Discord](https://discord.gg/jUtHzhddZZ) for Q&A. Please consider signing up for Patreon or Github sponsorship, link is on the right.
 
+Note: The EBB42 V1.2.1 in the kit is no longer conpatible with the old firmware, please source EBB42 V1.2/V1.1 or help updating the firmware to support the new board.
+
+
 The part kit is available at [Triangle Lab-Global](https://s.click.aliexpress.com/e/_DFp1dtz) and [DFH-US](https://dfh.fm/collections/new-products/products/polyformer-kit-by-reiten966).
 
 Make sure your printer can print over 260C and is not PTFE lined.
