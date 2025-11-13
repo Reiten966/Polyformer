@@ -1,6 +1,10 @@
 # Polyformer
 ## To Reshape, Recreate, Reproduce.
 
+As of late 2025, Polyformer is no longer supported due to a shift of focus in my life. Thanks for the amazing support of the community over the past 3 years. You could follow my future work at @reiten966
+
+
+
 Polyformer is an open-source project that aims to recycle plastics into FDM filaments
 
 Join the [Discord](https://discord.gg/jUtHzhddZZ) for Q&A. Please consider signing up for Patreon or Github sponsorship, link is on the right.
